@@ -1,0 +1,21 @@
+.hero {
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid var(--purple-shade-4); */
+  background-color: var(--purple-shade-1);
+  background-image: url('../../assets/images/hero_image.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .display {
+  font-size: calc(21rem / 16);
+  text-transform: uppercase;
+  line-height: 31px;
+  letter-spacing: calc((24 / 1000) * 1rem);
+}

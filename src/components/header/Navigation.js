@@ -6,10 +6,12 @@ import logo from "../../assets/images/bcu_logo.png";
 
 function Navigation() {
 	return (
-		<div className="container_fluid">
+		<div className="container_fluid backgroundColor">
 			<header>
 				<div className={classes.logo}>
-					<img src={logo} alt="Bcu logo" />
+					<Link to="/">
+						<img src={logo} alt="Bcu logo" />
+					</Link>
 				</div>
 
 				<nav>

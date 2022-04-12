@@ -7,7 +7,7 @@
 }
 
 header {
-    max-height: 100vh;
+    /* height: auto; */
     padding-top: calc(20rem / 16); 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -23,7 +23,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-bottom: calc(25rem / 16);
+    padding-bottom: calc(25rem / 16);
 }
 
 nav ul a {
