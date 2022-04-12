@@ -5,17 +5,18 @@
   color: var(--white);
   border-radius: 3px;
   border: none;
+  outline: none;
 }
 
 .btn-search {
   background-color: var(--purple-shade-4);
-  
+  display: none;
 }
 
 .input {
-  padding: 0.7rem 1rem;
-  width: 250px;
-  font-size: 0.9rem;
+  padding: 0.9rem 1rem;
+  width: 80%;
+  font-size: 1rem;
   border: none;
   outline: none;
   font-family: var(--font-default);

@@ -17,6 +17,9 @@ function Navigation() {
 				<nav>
 					<ul className={classes.nav_primary}>
 						<li>
+							<Link to="/">Home</Link>
+						</li>
+						<li>
 							<Link to="/news-and-magazines">News & Magazines</Link>
 						</li>
 

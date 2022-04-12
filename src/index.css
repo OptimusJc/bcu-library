@@ -19,7 +19,7 @@ body {
   font-family: var(--default-font);
   background-color: var(--white);
   font-size: var(--size-1);
-  color: var(--purple-shade-2);
+  color: var(--white);
 }
 
 .container {

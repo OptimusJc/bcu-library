@@ -8,14 +8,17 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding-block: 2rem;
+  margin-inline: auto;
 }
 
+
 .hero .display {
-  font-size: calc(21rem / 16);
+  font-size: calc(18rem / 16);
+  
   text-transform: uppercase;
   line-height: 31px;
   letter-spacing: calc((24 / 1000) * 1rem);
+  margin-block-end: 2rem;
 }
