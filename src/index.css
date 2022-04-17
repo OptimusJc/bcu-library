@@ -1,36 +1,170 @@
-:root {
-  --default-font: 'poppins', 'Arial'; 
-  --purple-shade-1: #d6c5f0;
-  --purple-shade-2: #9153f4;
-  --purple-shade-3: #5727a3;
-  --purple-shade-4: #1b0044;
-  --white: #f9f9f9;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-  --size-1: 15px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--default-font: "poppins", "Arial";
+	--purple-shade-1: #d6c5f0;
+	--purple-shade-2: #9153f4;
+	--purple-shade-3: #5727a3;
+	--purple-shade-4: #1b0044;
+	--white: #f9f9f9;
+
+	--size-1: 15px;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: var(--default-font);
-  background-color: var(--white);
-  font-size: var(--size-1);
-  color: var(--white);
+	font-family: var(--default-font);
+	background-color: var(--white);
+	font-size: var(--size-1);
+	color: var(--white);
 }
 
 .container {
-  max-width: 80rem;
-  margin-inline: auto;
+	max-width: 80rem;
+	margin-inline: auto;
 }
 
 .container_fluid {
-  width: 100%;
+	width: 100%;
 }
 
 .backgroundColor {
-  background-image: linear-gradient(to right, var(--purple-shade-4), var(--purple-shade-3));
+	background-image: linear-gradient(
+		to right,
+		var(--purple-shade-4),
+		var(--purple-shade-3)
+	);
 }

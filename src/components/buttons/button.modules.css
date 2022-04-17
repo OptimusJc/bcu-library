@@ -1,23 +1,18 @@
 .btn {
-  padding: 0.9rem 2rem;
-  font-size: calc(15rem / 16);
-  text-transform: capitalize;
-  color: var(--white);
-  border-radius: 3px;
-  border: none;
-  outline: none;
+	padding: 0.9rem 2rem;
+	font-size: calc(15rem / 16);
+	text-transform: capitalize;
+	color: var(--white);
+	border-radius: 3px;
+	border: none;
+	outline: none;
 }
 
-.btn-search {
-  background-color: var(--purple-shade-4);
-  display: none;
-}
-
-.input {
-  padding: 0.9rem 1rem;
-  width: 80%;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  font-family: var(--font-default);
-}
+/* .input {
+	padding: 0.9rem 1rem;
+	width: 80%;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+	font-family: var(--font-default);
+} */

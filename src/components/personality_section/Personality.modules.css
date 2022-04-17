@@ -1,0 +1,13 @@
+.person_image {
+	height: 400px;
+	width: 300px;
+	background-color: var(--purple-shade-2);
+}
+
+.person_bio p {
+	color: var(--purple-shade-4);
+}
+
+.person_bio .read-more {
+	border: 1px solid var(--purple-shade-4);
+}
