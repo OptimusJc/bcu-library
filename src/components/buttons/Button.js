@@ -1,7 +1,7 @@
 import "./button.modules.css";
 
-const Button = ({ title }) => {
-	return <button className="btn btn-search">{title}</button>;
+const Button = ({ title, classes}) => {
+	return <button className={classes}>{title}</button>;
 };
 
 export default Button;

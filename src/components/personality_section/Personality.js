@@ -1,5 +1,6 @@
 import "./Personality.modules.css";
 import Button from "../buttons/Button";
+import '../buttons/button.modules.css';
 
 const Personality = () => {
 	return (
@@ -17,7 +18,7 @@ const Personality = () => {
 					pariatur
 				</p>
 
-				<Button title="Read More" className="read-more" />
+				<Button title="Read More" classes="read-more" />
 			</div>
 		</section>
 	);

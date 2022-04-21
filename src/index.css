@@ -129,7 +129,7 @@ table {
 }
 
 :root {
-	--default-font: "poppins", "Arial";
+	--default-font: "poppins";
 	--purple-shade-1: #d6c5f0;
 	--purple-shade-2: #9153f4;
 	--purple-shade-3: #5727a3;
@@ -149,7 +149,7 @@ body {
 	font-family: var(--default-font);
 	background-color: var(--white);
 	font-size: var(--size-1);
-	color: var(--white);
+	color: var(--purple-shade-4);
 }
 
 .container {

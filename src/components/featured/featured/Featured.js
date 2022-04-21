@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Ratio } from "react";
 
 import "./Featured.modules.css";
 import image1 from "../../../assets/images/pexels.jpg";

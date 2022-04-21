@@ -8,6 +8,11 @@
 	outline: none;
 }
 
+.read-more {
+	border: 1px solid var(--purple-shade-4);
+	padding: 1rem;
+}
+
 /* .input {
 	padding: 0.9rem 1rem;
 	width: 80%;
