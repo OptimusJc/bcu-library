@@ -1,0 +1,35 @@
+.featured {
+	margin-block: 2rem;
+}
+
+.featured h3 {
+	font-weight: 800;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: var(--purple-shade-4);
+	padding-block: 0.5rem;
+}
+
+.featureImage {
+	width: 100px;
+	height: 80px;
+}
+
+.feature ul a {
+	display: flex;
+	margin-block: 1rem;
+	text-decoration: none;
+	color: var(--purple-shade-4);
+}
+.feature ul a div {
+	margin-left: 1rem;
+}
+.feature ul a div p {
+	padding-bottom: 0.5rem;
+	line-height: 1rem;
+}
+.feature ul a div span {
+	color: var(--purple-shade-2);
+	font-size: 0.8rem;
+}
+

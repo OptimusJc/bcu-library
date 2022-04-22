@@ -9,8 +9,7 @@
 header {
     /* height: auto; */
     padding-top: calc(20rem / 16); 
-    padding-left: 1rem;
-    padding-right: 1rem;
+   padding-inline: 1rem;
 }
 
 nav {

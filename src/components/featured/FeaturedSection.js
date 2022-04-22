@@ -3,7 +3,8 @@ import Featured from "./featured/Featured";
 
 const Featured_section = () => {
     return (
-        <section>
+        <section className="container">
+            
             <Adverts />
             <Featured />
         </section>
