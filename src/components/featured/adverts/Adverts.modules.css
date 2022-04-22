@@ -1,5 +1,5 @@
 .advert {
-	/* margin: 1rem calc(15rem / 16); */
+	margin-block: 1rem;
 }
 
 .advert h3 {

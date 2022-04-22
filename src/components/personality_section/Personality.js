@@ -2,13 +2,17 @@ import "./Personality.modules.css";
 import Button from "../buttons/Button";
 import '../buttons/button.modules.css';
 
+import personality_image from '../../assets/images/placeholder/256x471.jpg';
+
 const Personality = () => {
 	return (
-		<section>
+		<section className="personality-section container">
 			<div className="person_image">
-				<img src="" alt="" />
+				<img src={personality_image} alt="" />
 			</div>
 			<div className="person_bio">
+				<h3>personality of the week</h3>
+				<h4>dr. flinstones</h4>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
