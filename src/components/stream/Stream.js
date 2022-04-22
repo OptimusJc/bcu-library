@@ -8,35 +8,42 @@ import series from "../../assets/images/stream&download/series_icon_light.svg";
 
 const Stream = () => {
 	return (
-		<section className="stream_download">
+		<section className="stream_download container">
 			<h3>Stream and Download</h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt
+				Browse through our library of content
 			</p>
 
 			<ul>
 				<li>
 					<Link to="">
-						<img src={ebook} alt="ebook icon" />
+						<div>
+							<img src={ebook} alt="ebook icon" />
+						</div>
 						<span>ebooks</span>
 					</Link>
 				</li>
 				<li>
 					<Link to="">
-						<img src={music} alt="music icon" />
+						<div>
+							<img src={music} alt="music icon" />
+						</div>
 						<span>songs</span>
 					</Link>
 				</li>
 				<li>
 					<Link to="">
-						<img src={podcast} alt="podcast icon" />
+						<div>
+							<img src={podcast} alt="podcast icon" />
+						</div>
 						<span>messages</span>
 					</Link>
 				</li>
 				<li>
 					<Link to="">
-						<img src={series} alt="series icon" />
+						<div>
+							<img src={series} alt="series icon" />
+						</div>
 						<span>series</span>
 					</Link>
 				</li>

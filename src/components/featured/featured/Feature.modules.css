@@ -18,8 +18,6 @@
 .feature ul a {
 	display: flex;
 	margin-block: 1rem;
-	text-decoration: none;
-	color: var(--purple-shade-4);
 }
 .feature ul a div {
 	margin-left: 1rem;
