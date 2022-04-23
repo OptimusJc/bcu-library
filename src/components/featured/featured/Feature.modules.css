@@ -2,6 +2,11 @@
 	margin-block: 2rem;
 }
 
+.feature-container {
+	height: 450px;
+	overflow-y: scroll;
+}
+
 .featured h3 {
 	font-weight: 800;
 	font-size: 1.5rem;

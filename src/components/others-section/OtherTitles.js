@@ -1,16 +1,22 @@
 import Cards from '../card/Cards';
+import '../apostle-section/apostle.modules.css';
+import './otherTitle.modules.css';
 
 const OtherTitles = () => {
     return (
 
-        <section>
+        <section className='other-section container'>
             <h3>Explore other messages</h3>
+            <div className='feature-container'>
 
-            <Cards classes="small"/>
-            <Cards classes="medium"/>
-            <Cards />
-            <Cards />
-            <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+            </div>
         </section>
     );
 }

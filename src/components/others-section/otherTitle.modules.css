@@ -1,0 +1,16 @@
+.other-section h3 {
+    padding-block-start: 2rem;
+    margin-block-start: 1rem;
+}
+
+.other-section .card-body {
+    background-color: var(--purple-shade-4);
+}
+
+.other-section .card-title {
+    color: var(--purple-shade-2);
+    letter-spacing: 0.6px;
+}
+.other-section .card-text {
+    color: var(--purple-shade-1);
+}

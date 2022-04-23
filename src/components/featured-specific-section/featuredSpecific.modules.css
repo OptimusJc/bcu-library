@@ -1,3 +1,26 @@
 .featured-specific {
-    background-color: var(--purple-shade-1);
+    background-color: hsl(264, 29%, 86%);
+    margin-block-start: 2rem;
+    padding-block: 2rem;
+}
+.featured-specific .card {
+    box-shadow: none;
+}
+
+.featured-specific h3 {
+    padding-block: 1rem;
+}
+
+.featured-specific .card .card-body {
+    background-color: none;
+    border: none;
+}
+
+.featured-specific .card-img-top {
+    width: 100%;
+    height: 150px;
+}
+
+.featured-specific .card-text {
+    color: var(--purple-shade-2);
 }

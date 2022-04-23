@@ -131,7 +131,7 @@ table {
 /* * My Custom Styles */
 :root {
 	--default-font: "poppins";
-	--purple-shade-1: #d6c5f0;
+	--purple-shade-1: hsl(264, 59%, 86%);
 	--purple-shade-2: #9153f4;
 	--purple-shade-3: #5727a3;
 	--purple-shade-4: #1b0044;

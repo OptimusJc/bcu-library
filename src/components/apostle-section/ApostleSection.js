@@ -4,14 +4,15 @@ import './apostle.modules.css';
 const ApostleSection = () => {
     return (
 
-        <section>
+        <section className='container apostle-section'>
             <h3>Apostle Dr La Marco Nesbit</h3>
-
-            <Cards classes="small"/>
-            <Cards classes="medium"/>
-            <Cards />
-            <Cards />
-            <Cards />
+            <div className='feature-container'>
+                <Cards classes="small"/>
+                <Cards classes="medium"/>
+                <Cards />
+                <Cards />
+                <Cards />
+            </div>
         </section>
     );
 }

@@ -1,7 +1,13 @@
-.small {
-    width: 18rem;
+.card {
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+    margin-inline: auto;
+    background: none;
+    width: 19rem;
+    margin-block: 1rem;
 }
 
-.medium {
-    width: 30rem;
+.card,
+.card img,
+.card .card-body {
+    border: none;
 }
