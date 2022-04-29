@@ -4,8 +4,8 @@
 }
 
 .carousel_container {
-  box-shadow: -3px -3px 12px hsla(264, 58%, 86%);
-  box-shadow: 3px 3px 12px hsla(263, 61%, 40%, 0.6);
+  box-shadow: -3px -3px 12px hsla(264, 58%, 86%, 0.6),
+    3px 3px 12px hsla(263, 61%, 40%, 0.6);
 }
 
 .advert h3 {

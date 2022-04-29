@@ -6,7 +6,8 @@
   height: 450px;
   overflow-y: scroll;
   border: 1px solid hsla(264, 58%, 86%, 0.3);
-  box-shadow: 4px 4px 9px hsla(264, 58%, 86%, 0.5);
+  box-shadow: -4px -4px 9px hsla(264, 100%, 99%, 0.6),
+    4px 4px 9px hsla(264, 58%, 86%, 0.5);
 }
 
 .featured h3 {

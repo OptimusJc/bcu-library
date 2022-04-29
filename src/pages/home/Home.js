@@ -12,8 +12,8 @@ const Home = () => {
     <div>
       <Hero />
       <FeaturedSection />
-      {/*<Stream />
-			<Personality />
+      <Stream />
+      {/*<Personality />
 			<ApostleSection />
 			<OtherTitles />
 			<FeaturedSpecificSection />
