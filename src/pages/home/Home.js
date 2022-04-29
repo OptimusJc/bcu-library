@@ -13,11 +13,11 @@ const Home = () => {
       <Hero />
       <FeaturedSection />
       <Stream />
-      {/*<Personality />
-			<ApostleSection />
-			<OtherTitles />
-			<FeaturedSpecificSection />
-			<Footer /> */}
+      <Personality />
+      <ApostleSection />
+      <OtherTitles />
+      <FeaturedSpecificSection />
+      <Footer />
     </div>
   );
 };

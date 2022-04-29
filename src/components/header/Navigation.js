@@ -28,7 +28,7 @@ function Navigation() {
               "offcanvas",
               "offcanvas-end",
             ].join(" ")}
-            tabindex="-1"
+            // tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >

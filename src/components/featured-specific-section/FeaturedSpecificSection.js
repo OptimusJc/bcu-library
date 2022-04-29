@@ -6,7 +6,7 @@ const FeaturedSpecificSection = () => {
     <section className="featured-specific container">
       <div>
         <h3>Apostle Dr Mariah Nesbit</h3>
-        <div className="feature-container">
+        <div className="feature-container-specific">
           <Cards />
           <Cards />
           <Cards />
@@ -20,7 +20,7 @@ const FeaturedSpecificSection = () => {
       </div>
       <div>
         <h3>Apostle Arome Osayi</h3>
-        <div className="feature-container">
+        <div className="feature-container-specific">
           <Cards />
           <Cards />
           <Cards />
@@ -34,7 +34,7 @@ const FeaturedSpecificSection = () => {
       </div>
       <div>
         <h3>Pastor Patrick Okuna</h3>
-        <div className="feature-container">
+        <div className="feature-container-specific">
           <Cards />
           <Cards />
           <Cards />

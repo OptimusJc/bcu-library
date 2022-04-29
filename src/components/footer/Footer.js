@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import footer_logo from "../../assets/images/bcu_logo.png";
 import "./footer.modules.css";
+import styles from "../header/Navigation.module.css";
 
 import { FaFacebook, FaYoutube } from "react-icons/fa";
-import { IconContext } from "react-icons";
 
 const Footer = () => {
   return (
-    <footer className="backgroundColor container">
+    <footer className={["container", styles.backgroundColor].join(" ")}>
       <div className="footer-logo">
         <img src={footer_logo} alt="footer logo" />
       </div>

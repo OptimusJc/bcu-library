@@ -7,13 +7,15 @@
 footer {
   color: var(--white);
 }
+footer ul {
+  padding-inline-start: 1rem;
+}
 footer ul a {
   color: var(--purple-shade-1);
 }
 footer ul li {
   padding-block: 0.6rem;
   margin-block: 0.4rem;
-  /* border: 1px solid red; */
 }
 
 footer ul li:first-child {
