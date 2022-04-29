@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      {/* <FeaturedSection />
-			<Stream />
+      <FeaturedSection />
+      {/*<Stream />
 			<Personality />
 			<ApostleSection />
 			<OtherTitles />
