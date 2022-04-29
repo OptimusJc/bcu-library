@@ -133,9 +133,9 @@ table {
 :root {
   --default-font: "poppins";
   --purple-shade-1: hsl(264, 59%, 86%);
-  --purple-shade-2: #9153f4;
-  --purple-shade-3: #5727a3;
-  --purple-shade-4: #1b0044;
+  --purple-shade-2: hsl(263, 88%, 64%);
+  --purple-shade-3: hsl(263, 61%, 40%);
+  --purple-shade-4: hsl(264, 100%, 13%);
   --white: #f9f9f9;
 
   --size-1: 15px;

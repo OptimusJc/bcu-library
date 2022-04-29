@@ -9,12 +9,7 @@ const Feature = () => {
       <ul>
         <li>
           <Link to="">
-            <img
-              src={image2}
-              alt=""
-              //   aspectRatio={50}
-              className="featureImage"
-            />
+            <img src={image2} alt="" className="featureImage" />
             <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
               <span>January 2, 2022</span>
