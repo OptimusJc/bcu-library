@@ -1,3 +1,39 @@
 .footer-logo img {
-    width: 200px;
+  width: 200px;
+  padding-block: 1rem;
+  margin-inline-start: -1rem;
+}
+
+footer {
+  color: var(--white);
+}
+footer ul a {
+  color: var(--purple-shade-1);
+}
+footer ul li {
+  padding-block: 0.6rem;
+  margin-block: 0.4rem;
+  /* border: 1px solid red; */
+}
+
+footer ul li:first-child {
+  padding-block: 0.8rem;
+}
+
+.footer-bottom .footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom p {
+  padding-block: 1rem;
+  padding-block-end: 2rem;
+}
+
+.footer-bottom .footer-icons a svg {
+  width: 25px;
+  height: 25px;
+}
+.footer-bottom .footer-icons a svg:first-child {
+  margin-inline-end: 2rem;
 }
