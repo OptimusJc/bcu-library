@@ -6,6 +6,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import "animate.css";
 
 import Home from "./pages/home/Home";
 import NewsandMagazines from "./pages/news/NewsandMagazines";

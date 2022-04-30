@@ -1,54 +1,76 @@
 .personality-section {
-	margin-block: 3rem;
+  margin-block: 3rem;
 }
 
 .person_image {
-	height: 400px;
-	width: 300px;
-	overflow: hidden;
-	
-	box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
 }
 .person_image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .personality-section .person_bio {
-	width: 280px;
-	margin-inline-start: 3rem;
-	margin-block-start: -10rem;
-	background-color: var(--purple-shade-3);
-	padding-inline: calc(14rem / 16);
-	color: var(--purple-shade-1);
-	padding-block-end: 1rem;
-	z-index: 2;
-	position: relative;
-	box-shadow: 4px 4px 12px rgba(27,0,68,0.5);
-
+  width: 280px;
+  margin-inline-start: 3rem;
+  margin-block-start: -10rem;
+  background-color: var(--purple-shade-3);
+  padding-inline: calc(14rem / 16);
+  color: var(--purple-shade-1);
+  padding-block-end: 1rem;
+  z-index: 2;
+  position: relative;
+  box-shadow: 4px 4px 12px rgba(27, 0, 68, 0.5);
 }
 
 .personality-section .person_bio h3 {
-	text-transform: uppercase;
-	font-size: 1.1rem;
-	font-weight: 300;
-	padding-block: 1rem;
-	color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-block: 1rem;
+  color: var(--white);
 }
 .personality-section .person_bio h4 {
-	color: var(--white);
-	text-transform: uppercase;
-	font-weight: 500;
-	margin-block-end: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-block-end: 1rem;
 }
 
 .personality-section .person_bio p {
-	line-height: 1rem;
-	margin-block-end: 2rem;
+  line-height: 1rem;
+  margin-block-end: 2rem;
 }
 
 .personality-section .read-more {
-	background-color: var(--purple-shade-1);
-	border: none;
+  background-color: var(--purple-shade-1);
+  border: none;
+}
+
+@media (min-width: 48em) {
+  .person_image {
+    width: 420px;
+    height: 320px;
+  }
+
+  .personality-section .person_bio {
+    width: 420px;
+    margin-inline-start: 15rem;
+    margin-block-start: -12rem;
+    padding-inline: calc(20rem / 16);
+    padding-block: 2rem;
+  }
+
+  .personality-section .person_bio h3 {
+    padding-block: 0;
+  }
+
+  .personality-section .person_bio p {
+    line-height: 1.2rem;
+  }
 }

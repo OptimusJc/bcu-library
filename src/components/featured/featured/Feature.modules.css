@@ -40,3 +40,18 @@
   color: var(--purple-shade-2);
   font-size: 0.8rem;
 }
+
+@media (min-width: 48em) {
+  .featureImage {
+    width: 110px;
+  }
+
+  .feature ul a div p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .feature-container {
+    height: 260px;
+  }
+}

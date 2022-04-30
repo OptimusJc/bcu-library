@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <header className={classes.backgroundColor}>
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container">
           <Link to="/" className={classes.navbar_brand}>
             <img src={logo} alt="bcu logo" />
           </Link>

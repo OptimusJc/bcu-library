@@ -25,3 +25,11 @@
 .carousel_caption p {
   color: var(--purple-shade-1);
 }
+
+@media (min-width: 48em) {
+  .advert {
+    width: 600px;
+    height: 350px;
+    margin-right: 1rem;
+  }
+}
