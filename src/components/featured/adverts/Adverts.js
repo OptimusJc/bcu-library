@@ -7,7 +7,9 @@ import "./Adverts.modules.css";
 const Adverts = () => {
   return (
     <div className="advert">
-      <h3>Bcu Adverts</h3>
+      <h3 className={["animate__animated", "animate__wobble"].join(" ")}>
+        Bcu Adverts
+      </h3>
 
       <div
         id="carouselExampleCaptions"

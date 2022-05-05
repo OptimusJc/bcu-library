@@ -1,57 +1,59 @@
 .featured {
-  margin-block: 2rem;
+    margin-block: 2rem;
 }
 
 .feature-container {
-  height: 450px;
-  overflow-y: scroll;
-  border: 1px solid hsla(264, 58%, 86%, 0.3);
-  box-shadow: -4px -4px 9px hsla(264, 100%, 99%, 0.6),
-    4px 4px 9px hsla(264, 58%, 86%, 0.5);
+    height: 450px;
+    overflow-y: scroll;
+    border: 1px solid hsla(264, 58%, 86%, 0.3);
+    box-shadow: -4px -4px 9px hsla(264, 100%, 99%, 0.6),
+        4px 4px 9px hsla(264, 58%, 86%, 0.5);
 }
 
 .featured h3 {
-  font-weight: 800;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: var(--purple-shade-4);
-  padding-block: 0.5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--purple-shade-4);
+    padding-block: 0.5rem;
 }
 
 .featureImage {
-  width: 120px;
-  height: 80px;
+    width: 120px;
+    height: 80px;
 }
 
 .feature ul {
-  padding-inline-start: 0;
+    padding-inline-start: 0;
 }
 .feature ul a {
-  display: flex;
-  margin-block: 1rem;
+    display: flex;
+    margin-block: 1rem;
 }
 .feature ul a div {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
 .feature ul a div p {
-  line-height: 1rem;
+    line-height: 1rem;
 }
 .feature ul a div span {
-  color: var(--purple-shade-2);
-  font-size: 0.8rem;
+    color: var(--purple-shade-2);
+    font-size: 0.8rem;
 }
 
 @media (min-width: 48em) {
-  .featureImage {
-    width: 110px;
-  }
+    .featureImage {
+        width: 110px;
+    }
 
-  .feature ul a div p {
-    font-size: 0.8rem;
-    margin: 0;
-  }
+    .feature ul a div p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
 
-  .feature-container {
-    height: 260px;
-  }
+    .feature-container {
+        /* height: 260px; */
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

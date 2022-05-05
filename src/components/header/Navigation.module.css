@@ -71,11 +71,15 @@ header .navbar_toggler span:after {
   );
 }
 .dropdown_menu_container li {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   margin-block-end: calc(15rem / 16);
 }
 .dropdown_menu_container li:hover {
   background-color: var(--purple-shade-1);
+}
+
+.dropdown_menu_container li a {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 64rem) {

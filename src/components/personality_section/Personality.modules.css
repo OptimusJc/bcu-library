@@ -54,8 +54,8 @@
 
 @media (min-width: 48em) {
   .person_image {
-    width: 420px;
-    height: 320px;
+    width: 400px;
+    height: 300px;
   }
 
   .personality-section .person_bio {
@@ -71,6 +71,14 @@
   }
 
   .personality-section .person_bio p {
-    line-height: 1.2rem;
+    line-height: 1.1rem;
+  }
+
+  .personality-section .person_bio p {
+    margin-block-end: 1.5rem;
+  }
+
+  .personality-section .read-more {
+    padding-block: 0.8rem;
   }
 }

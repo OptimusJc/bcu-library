@@ -31,3 +31,9 @@
     font-size: calc(14rem / 16);
     color: var(--purple-shade-3);
 }
+
+@media (min-width: 48em) {
+    .apostle-section .feature-container .card {
+        width: 300px;
+    }
+}
