@@ -8,18 +8,18 @@ import FeaturedSpecificSection from "../../components/featured-specific-section/
 import Footer from "../../components/footer/Footer.js";
 
 const Home = () => {
-  return (
-    <div>
-      <Hero />
-      <FeaturedSection />
-      <Stream />
-      <Personality />
-      <ApostleSection />
-      <OtherTitles />
-      <FeaturedSpecificSection />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Hero />
+            <FeaturedSection />
+            <Stream />
+            <Personality />
+            <ApostleSection />
+            <OtherTitles />
+            <FeaturedSpecificSection />
+            <Footer />
+        </div>
+    );
 };
 
 export default Home;

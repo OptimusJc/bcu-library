@@ -1,6 +1,12 @@
 @media (min-width: 48em) {
-  .featured_section {
-    display: flex;
-    align-items: baseline;
-  }
+    .featured_section {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media (min-width: 64em) {
+    .featured_section {
+        margin-block: 2rem;
+    }
 }

@@ -3,7 +3,11 @@ import randomImage from "../../assets/images/placeholder/a-book-g793b9761e_640.j
 
 const Cards = ({ styles }) => {
     return (
-        <div className={["card", styles].join(" ")}>
+        <div
+            className={["card", styles].join(" ")}
+            // data-aos="fade-right"
+            // data-aos-delay="10"
+        >
             <img src={randomImage} class="card-img-top" alt="..." />
             <div class="card-body">
                 <p class="card-text">

@@ -1,120 +1,138 @@
 .backgroundColor {
-  background-image: linear-gradient(
-    to right,
-    var(--purple-shade-4),
-    var(--purple-shade-3)
-  );
+    background-image: linear-gradient(
+        to right,
+        var(--purple-shade-4),
+        var(--purple-shade-3)
+    );
 }
 
 header {
-  height: 90px;
+    height: 90px;
 }
 header .navbar_brand img {
-  width: 120px;
-  margin-left: -1rem;
+    width: 120px;
+    margin-left: -1rem;
 }
 
 /* navbar toggler icon  */
 header .navbar_toggler {
-  /* background-color: var(--purple-shade-1); */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--purple-shade-1);
-  box-shadow: -3px -3px 9px var(--purple-shade-2);
-  box-shadow: 3px 3px 9px var(--purple-shade-4);
+    /* background-color: var(--purple-shade-1); */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--purple-shade-1);
+    box-shadow: -3px -3px 9px var(--purple-shade-2);
+    box-shadow: 3px 3px 9px var(--purple-shade-4);
 }
 header .navbar_toggler span,
 header .navbar_toggler span:before,
 header .navbar_toggler span:after {
-  background-color: var(--purple-shade-4);
-  border-radius: 4px;
-  height: 4px;
+    background-color: var(--purple-shade-4);
+    border-radius: 4px;
+    height: 4px;
 }
 header .navbar_toggler span {
-  position: relative;
+    position: relative;
+}
+header .navbar_toggler span:before,
+header .navbar_toggler span:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: inherit;
 }
 header .navbar_toggler span:before {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: inherit;
+    top: -7px;
 }
 header .navbar_toggler span:after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  width: inherit;
+    bottom: -7px;
 }
 
 .offcanvas_body {
-  padding-inline-start: 1rem;
+    padding-inline-start: 1rem;
 }
 .offcanvas_body ul li {
-  margin-block-end: calc(15rem / 16);
+    margin-block-end: calc(15rem / 16);
 }
 .offcanvas_body li a {
-  color: var(--white);
+    color: var(--white);
 }
 .offcanvas_body .nav-item .nav-link:active {
-  color: var(--purple-shade-2);
+    color: var(--purple-shade-2);
 }
 
 .dropdown_menu_container {
-  background-color: linear-gradient(
-    to right,
-    var(--purple-shade-3),
-    var(--purple-shade-4)
-  );
+    background-color: linear-gradient(
+        to right,
+        var(--purple-shade-3),
+        var(--purple-shade-4)
+    );
 }
 .dropdown_menu_container li {
-  /* font-size: 0.9rem; */
-  margin-block-end: calc(15rem / 16);
+    /* font-size: 0.9rem; */
+    margin-block-end: calc(15rem / 16);
 }
 .dropdown_menu_container li:hover {
-  background-color: var(--purple-shade-1);
+    background-color: var(--purple-shade-1);
 }
 
 .dropdown_menu_container li a {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 48em) {
+    header {
+        max-height: 80px;
+    }
+
+    header .navbar_brand img {
+        width: 110px;
+    }
+
+    header .navbar_toggler span,
+    header .navbar_toggler span:before,
+    header .navbar_toggler span:after {
+        border-radius: 3px;
+        /* height: 3px; */
+    }
 }
 
 @media (min-width: 64rem) {
-  .logo img {
-    width: 160px;
-  }
+    .logo img {
+        width: 160px;
+    }
 
-  header {
-    padding: calc(20rem / 16) 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 80rem;
-    margin: auto;
-  }
-  /* 
-  nav .nav_secondary {
-    margin-top: auto;
-  }
+    header {
+        padding: calc(20rem / 16) 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: auto;
+    }
 
-  nav {
-    display: inherit;
-    margin-top: 0;
-  }
+    header .navbar_toggler {
+        display: none;
+    }
 
-  nav ul {
-    display: inherit;
-  }
+    header .offcanvasNavbar {
+        border: none;
+        position: relative;
+        background: none;
+        display: contents;
+    }
 
-  nav ul li {
-    padding: calc(7rem / 16);
-    margin-bottom: auto;
-  }
+    header .offcanvas_body {
+        display: flex;
+        margin-inline-start: 4rem;
+        font-size: 0.8rem;
+    }
+}
 
-  nav .nav_primary {
-    margin-right: 2.5rem;
-  } */
+@media (min-width: 85rem) {
+    header .offcanvas_body {
+        font-size: 0.9rem;
+        margin-inline-start: 6rem;
+    }
 }

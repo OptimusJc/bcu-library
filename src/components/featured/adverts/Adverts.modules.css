@@ -1,35 +1,36 @@
 .advert {
-  margin-block: 1rem;
-  margin-inline: -0.5rem;
+    margin-block: 1rem;
+    margin-inline: -0.5rem;
 }
 
 .carousel_container {
-  box-shadow: -3px -3px 12px hsla(264, 58%, 86%, 0.6),
-    3px 3px 12px hsla(263, 61%, 40%, 0.6);
+    box-shadow: -3px -3px 12px hsla(264, 58%, 86%, 0.6),
+        3px 3px 12px hsla(263, 61%, 40%, 0.6);
 }
 
 .advert h3 {
-  font-weight: 800;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding-block: 0.8rem;
-  /* padding-inline: 1rem; */
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-block: 0.8rem;
+    /* padding-inline: 1rem; */
 }
 
 .carousel-item img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .carousel_caption h5,
 .carousel_caption p {
-  color: var(--purple-shade-1);
+    color: var(--purple-shade-1);
 }
 
 @media (min-width: 48em) {
-  .advert {
-    width: 600px;
-    height: 350px;
-    margin-right: 1rem;
-  }
+    .advert {
+        width: 600px;
+        height: 350px;
+        margin-inline-start: 0;
+        margin-inline-end: 1rem;
+    }
 }
