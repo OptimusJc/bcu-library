@@ -33,41 +33,43 @@ const Stream = () => {
     // };
 
     return (
-        <section className="stream_download container ">
-            <h3>Stream and download</h3>
-            <p>Browse through our library of content</p>
+        <section className="stream_download">
+            <div className="container">
+                <h3>Stream and download</h3>
+                <p>Browse through our library of content</p>
 
-            <ul>
-                <li>
-                    <StreamLink
-                        imgSrc={ebook}
-                        title="Ebook"
-                        // onClick={animate}
-                        classes="animate__animated animate__headShake"
-                    />
-                </li>
-                <li>
-                    <StreamLink
-                        imgSrc={music}
-                        title="Songs"
-                        classes="animate__animated animate__headShake"
-                    />
-                </li>
-                <li>
-                    <StreamLink
-                        imgSrc={podcast}
-                        title="Podcasts"
-                        classes="animate__animated animate__headShake"
-                    />
-                </li>
-                <li>
-                    <StreamLink
-                        imgSrc={series}
-                        title="Series"
-                        classes="animate__animated animate__headShake"
-                    />
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <StreamLink
+                            imgSrc={ebook}
+                            title="Ebook"
+                            // onClick={animate}
+                            classes="animate__animated animate__headShake"
+                        />
+                    </li>
+                    <li>
+                        <StreamLink
+                            imgSrc={music}
+                            title="Songs"
+                            classes="animate__animated animate__headShake"
+                        />
+                    </li>
+                    <li>
+                        <StreamLink
+                            imgSrc={podcast}
+                            title="Podcasts"
+                            classes="animate__animated animate__headShake"
+                        />
+                    </li>
+                    <li>
+                        <StreamLink
+                            imgSrc={series}
+                            title="Series"
+                            classes="animate__animated animate__headShake"
+                        />
+                    </li>
+                </ul>
+            </div>
         </section>
     );
 };
