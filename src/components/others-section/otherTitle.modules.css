@@ -14,3 +14,27 @@
 .other-section .card-text {
     color: var(--purple-shade-1);
 }
+
+@media (min-width: 64em) {
+    .other-section .other_section_card {
+        width: 290px;
+    }
+    .other-section .other_section_card .card-body {
+        padding-top: 1.5rem;
+    }
+
+    .other-section .feature-container::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    .other-section .feature-container::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .other-section .feature-container::-webkit-scrollbar-thumb {
+        background-color: var(--purple-shade-2);
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+    }
+}

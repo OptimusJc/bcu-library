@@ -11,3 +11,13 @@
 .card .card-body {
     border: none;
 }
+
+.card .card-body .card-title {
+    text-transform: capitalize;
+}
+
+@media (min-width: 64em) {
+    .card .card-body .card-title {
+        margin-block-end: 1.2rem;
+    }
+}

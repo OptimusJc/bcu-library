@@ -3,12 +3,17 @@ import "../../index.css";
 import classes from "./Navigation.module.css";
 import logo from "../../assets/images/bcu_logo.png";
 
+import ebook from "../../assets/images/stream&download/ebook_icon_light.svg";
+import music from "../../assets/images/stream&download/music_icon_light.svg";
+import podcast from "../../assets/images/stream&download/podcast_icon_light.svg";
+import series from "../../assets/images/stream&download/series_icon_light.svg";
+
 function Navigation() {
     return (
         <div className={classes.backgroundColor}>
             <header>
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container">
+                    <div class={["container", classes.nav_container].join(" ")}>
                         <Link to="/" className={classes.navbar_brand}>
                             <img src={logo} alt="bcu logo" />
                         </Link>
@@ -79,7 +84,7 @@ function Navigation() {
                                     <li class="nav-item dropdown">
                                         <a
                                             class="nav-link dropdown-toggle"
-                                            href="..."
+                                            href="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"
                                             data-bs-toggle="dropdown"
@@ -99,6 +104,7 @@ function Navigation() {
                                                     to="/stream-and-download/ebooks"
                                                     class="dropdown-item"
                                                 >
+                                                    <img src={ebook} alt="" />
                                                     Ebooks
                                                 </Link>
                                             </li>
@@ -107,6 +113,7 @@ function Navigation() {
                                                     to="/stream-and-download/ebooks"
                                                     class="dropdown-item"
                                                 >
+                                                    <img src={music} alt="" />
                                                     Songs
                                                 </Link>
                                             </li>
@@ -115,6 +122,7 @@ function Navigation() {
                                                     to="/stream-and-download/ebooks"
                                                     class="dropdown-item"
                                                 >
+                                                    <img src={podcast} alt="" />
                                                     Podcasts
                                                 </Link>
                                             </li>
@@ -123,6 +131,7 @@ function Navigation() {
                                                     to="/stream-and-download/ebooks"
                                                     class="dropdown-item"
                                                 >
+                                                    <img src={series} alt="" />
                                                     Series
                                                 </Link>
                                             </li>
@@ -132,7 +141,7 @@ function Navigation() {
                                     <li class="nav-item dropdown">
                                         <a
                                             class="nav-link dropdown-toggle"
-                                            href="..."
+                                            href="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"
                                             data-bs-toggle="dropdown"

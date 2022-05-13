@@ -53,6 +53,10 @@
 }
 
 @media (min-width: 48em) {
+    .personality-section {
+        margin-inline: auto;
+    }
+
     .person_image {
         width: 400px;
         height: 300px;
@@ -80,5 +84,35 @@
 
     .personality-section .read-more {
         padding-block: 0.8rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .personality-section {
+        margin-block: 5rem;
+    }
+    .personality-section div {
+        margin-inline: auto;
+    }
+    .personality-section .person_image {
+        margin-inline-start: 8rem;
+        width: 420px;
+    }
+    .personality-section .person_bio {
+        margin-inline-start: 25rem;
+        margin-block-start: -10rem;
+    }
+}
+
+@media (min-width: 85em) {
+    .personality-section .person_image {
+        margin-inline-start: 15rem;
+        width: 450px;
+        height: 320px;
+    }
+
+    .personality-section .person_bio {
+        margin-inline-start: 35rem;
+        margin-block-start: -10rem;
     }
 }

@@ -32,6 +32,68 @@
         4px 4px 9px hsla(263, 61%, 40%, 0.3);
 }
 
+@media (min-width: 64em) {
+    .featured-specific .outer-wrapper {
+        display: flex;
+    }
+
+    .featured-specific
+        .outer-wrapper
+        .feature-container-specific
+        .card
+        .card-body {
+        width: 18rem;
+        padding-inline-start: 0.5rem;
+    }
+
+    .featured-specific .outer-wrapper .card img {
+        width: 18rem;
+    }
+
+    .featured-specific .outer-wrapper .feature-container-specific {
+        width: 19.5rem;
+        height: 500px;
+    }
+
+    .featured-specific
+        .outer-wrapper
+        .feature-container-specific::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    .featured-specific
+        .outer-wrapper
+        .feature-container-specific::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .featured-specific
+        .outer-wrapper
+        .feature-container-specific::-webkit-scrollbar-thumb {
+        background-color: var(--purple-shade-3);
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+    }
+
+    .featured-specific .outer-wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 85em) {
+    .featured-specific .outer-wrapper {
+        justify-content: center;
+    }
+
+    .featured-specific .outer-wrapper .feature-container-specific {
+        height: 600px;
+    }
+    .featured-specific .outer-wrapper > div {
+        margin-inline: 2.5rem;
+    }
+}
+
 /* * trial  */
 /* .featured-specific .outer-wrapper {
     background-color: yellow;

@@ -40,7 +40,7 @@ footer ul li:first-child {
     margin-inline-end: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
     footer .footer-logo img {
         width: 150px;
     }
@@ -58,5 +58,47 @@ footer ul li:first-child {
     }
     .footer-bottom .footer-icons li:first-child {
         margin-inline-end: 1rem;
+    }
+
+    footer ul a {
+        font-size: 0.8rem;
+    }
+    footer ul li {
+        margin-block: 0;
+    }
+}
+
+@media (min-width: 64em) {
+    .footer {
+        justify-content: space-around;
+        padding-block-start: 2rem;
+    }
+
+    .footer ul a {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom .footer-icons {
+        margin-bottom: 0;
+    }
+
+    .footer-bottom .footer-icons a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom > p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 85em) {
+    .footer ul li {
+        margin-block-end: 0.5rem;
+    }
+
+    .footer-bottom {
+        margin-inline-end: 6rem;
     }
 }

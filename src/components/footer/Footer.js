@@ -7,7 +7,9 @@ import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className={["container", styles.backgroundColor].join(" ")}>
+        <footer
+            className={["container-fluid", styles.backgroundColor].join(" ")}
+        >
             <div className={["footer"]}>
                 <div className="footer-logo">
                     <img src={footer_logo} alt="footer logo" />

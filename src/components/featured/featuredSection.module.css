@@ -8,5 +8,14 @@
 @media (min-width: 64em) {
     .featured_section {
         margin-block: 2rem;
+        display: flex;
+        justify-content: center;
     }
 }
+
+/* @media (min-width: 64em) {
+    .featured_section {
+        display: flex;
+        justify-content: center;
+    }
+} */

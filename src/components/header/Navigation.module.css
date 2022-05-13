@@ -81,6 +81,12 @@ header .navbar_toggler span:after {
     font-size: 0.9rem;
 }
 
+.dropdown_menu_container li a img {
+    width: 25px;
+    height: 25px;
+    margin-inline-end: 1rem;
+}
+
 @media (min-width: 48em) {
     header {
         max-height: 80px;
@@ -127,6 +133,18 @@ header .navbar_toggler span:after {
         display: flex;
         margin-inline-start: 4rem;
         font-size: 0.8rem;
+    }
+
+    header .nav_container {
+        align-items: baseline !important;
+    }
+
+    header .offcanvas_body .dropdown_menu_container {
+        background-image: linear-gradient(
+            to right,
+            var(--purple-shade-4),
+            var(--purple-shade-3)
+        );
     }
 }
 

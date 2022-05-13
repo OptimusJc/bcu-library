@@ -4,7 +4,7 @@ import { BiTime } from "react-icons/bi";
 import "./Feature.modules.css";
 import image2 from "../../../assets/images/placeholder/200x100.jpg";
 
-const Feature = () => {
+const Feature = ({ title, author, date }) => {
     return (
         <div className="feature">
             <ul>
@@ -12,13 +12,11 @@ const Feature = () => {
                     <Link to="">
                         <img src={image2} alt="" className="featureImage" />
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit,{" "}
-                            </p>
+                            <h6 className="h6">{author}</h6>
+                            <p>{title}</p>
                             <span>
                                 <BiTime className={["clock"]} />
-                                January 2, 2022
+                                {date}
                             </span>
                         </div>
                     </Link>
