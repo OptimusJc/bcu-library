@@ -12,21 +12,27 @@ function Navigation() {
     return (
         <div className={classes.backgroundColor}>
             <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class={["container", classes.nav_container].join(" ")}>
+                <nav className="navbar navbar-expand-lg">
+                    <div
+                        className={["container", classes.nav_container].join(
+                            " "
+                        )}
+                    >
                         <Link to="/" className={classes.navbar_brand}>
                             <img src={logo} alt="bcu logo" />
                         </Link>
 
                         <button
-                            class="navbar-toggler"
                             type="button"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar"
                             aria-controls="offcanvasNavbar"
-                            className={classes.navbar_toggler}
+                            className={[
+                                "navbar-toggler",
+                                classes.navbar_toggler,
+                            ].join(" ")}
                         >
-                            <span class="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
                         </button>
                         <div
                             className={[
@@ -39,13 +45,13 @@ function Navigation() {
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"
                         >
-                            <div class="offcanvas-header">
+                            <div className="offcanvas-header">
                                 <div className={classes.navbar_brand}>
                                     <img src={logo} alt="bcu logo" />
                                 </div>
                                 <button
                                     type="button"
-                                    class="btn-close text-reset"
+                                    className="btn-close text-reset"
                                     data-bs-dismiss="offcanvas"
                                     aria-label="Close"
                                     style={{
@@ -54,8 +60,8 @@ function Navigation() {
                                 ></button>
                             </div>
                             <div className={classes.offcanvas_body}>
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
+                                <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li className="nav-item">
                                         <Link
                                             to="/"
                                             className="nav-link active"
@@ -63,7 +69,7 @@ function Navigation() {
                                             Home
                                         </Link>
                                     </li>
-                                    <li class="nav-item">
+                                    <li className="nav-item">
                                         <Link
                                             to="/news-and-magazines"
                                             className="nav-link"
@@ -71,7 +77,7 @@ function Navigation() {
                                             News & Magazines
                                         </Link>
                                     </li>
-                                    <li class="nav-item">
+                                    <li className="nav-item">
                                         <Link
                                             to="/kids-and-teens"
                                             className="nav-link"
@@ -81,9 +87,9 @@ function Navigation() {
                                     </li>
 
                                     {/* stream and download link  */}
-                                    <li class="nav-item dropdown">
+                                    <li className="nav-item dropdown">
                                         <a
-                                            class="nav-link dropdown-toggle"
+                                            className="nav-link dropdown-toggle"
                                             href="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"
@@ -102,7 +108,7 @@ function Navigation() {
                                             <li>
                                                 <Link
                                                     to="/stream-and-download/ebooks"
-                                                    class="dropdown-item"
+                                                    className="dropdown-item"
                                                 >
                                                     <img src={ebook} alt="" />
                                                     Ebooks
@@ -111,7 +117,7 @@ function Navigation() {
                                             <li>
                                                 <Link
                                                     to="/stream-and-download/ebooks"
-                                                    class="dropdown-item"
+                                                    className="dropdown-item"
                                                 >
                                                     <img src={music} alt="" />
                                                     Songs
@@ -120,7 +126,7 @@ function Navigation() {
                                             <li>
                                                 <Link
                                                     to="/stream-and-download/ebooks"
-                                                    class="dropdown-item"
+                                                    className="dropdown-item"
                                                 >
                                                     <img src={podcast} alt="" />
                                                     Podcasts
@@ -129,7 +135,7 @@ function Navigation() {
                                             <li>
                                                 <Link
                                                     to="/stream-and-download/ebooks"
-                                                    class="dropdown-item"
+                                                    className="dropdown-item"
                                                 >
                                                     <img src={series} alt="" />
                                                     Series
@@ -138,9 +144,9 @@ function Navigation() {
                                         </ul>
                                     </li>
 
-                                    <li class="nav-item dropdown">
+                                    <li className="nav-item dropdown">
                                         <a
-                                            class="nav-link dropdown-toggle"
+                                            className="nav-link dropdown-toggle"
                                             href="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"
@@ -176,14 +182,20 @@ function Navigation() {
                                     </li>
                                 </ul>
 
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <Link to="/contact" class="nav-link">
+                                <ul className="navbar-nav">
+                                    <li className="nav-item">
+                                        <Link
+                                            to="/contact"
+                                            className="nav-link"
+                                        >
                                             Contact Us
                                         </Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <Link to="/support" class="nav-link">
+                                    <li className="nav-item">
+                                        <Link
+                                            to="/support"
+                                            className="nav-link"
+                                        >
                                             Support Library
                                         </Link>
                                     </li>

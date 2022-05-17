@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
-import Popper from "popper.js";
+// import $ from "jquery";
+// import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import React from "react";
 import { createRoot } from "react-dom/client";
@@ -17,6 +17,7 @@ import StreamandDownload from "./pages/stream&download/StreamandDownload";
 import Error from "./pages/error/Error";
 import SupportUs from "./pages/support/SupportUs";
 import Contact from "./pages/contact/Contact";
+import Admin from "./pages/admin/Admin";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -25,6 +26,7 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path="" element={<App />}>
+                <Route path="/admin" element={<Admin />} />
                 <Route path="/" element={<Home />} />
                 <Route
                     path="/news-and-magazines"
