@@ -81,7 +81,7 @@
     }
 }
 
-@media (min-width: 85em) {
+@media (min-width: 80em) {
     .featured-specific .outer-wrapper {
         justify-content: center;
     }

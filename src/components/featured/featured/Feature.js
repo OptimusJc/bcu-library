@@ -2,15 +2,26 @@ import { Link } from "react-router-dom";
 import { BiTime } from "react-icons/bi";
 
 import "./Feature.modules.css";
-import image2 from "../../../assets/images/placeholder/200x100.jpg";
+import { doc } from "firebase/firestore";
 
-const Feature = ({ title, author, date, path, unique_key }) => {
+const Feature = ({ title, author, date, path, doc_id }) => {
     return (
         <div className="feature">
             <ul>
-                <li key={unique_key}>
-                    <a href={path}>
-                        <img src={image2} alt="" className="featureImage" />
+                <li>
+                    <Link
+                        to={`/download/${doc_id}`}
+                        state={{
+                            document_title: { title },
+                            document_author: { author },
+                            document_url: { path },
+                        }}
+                    >
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt=""
+                            className="featureImage"
+                        />
                         <div>
                             <h6 className="h6">{author}</h6>
                             <p>{title}</p>
@@ -19,7 +30,7 @@ const Feature = ({ title, author, date, path, unique_key }) => {
                                 {date}
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>

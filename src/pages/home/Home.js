@@ -5,7 +5,6 @@ import Personality from "../../components/personality_section/Personality.js";
 import ApostleSection from "../../components/apostle-section/ApostleSection.js";
 import OtherTitles from "../../components/others-section/OtherTitles.js";
 import FeaturedSpecificSection from "../../components/featured-specific-section/FeaturedSpecificSection.js";
-import Footer from "../../components/footer/Footer.js";
 
 const Home = () => {
     return (
@@ -17,7 +16,6 @@ const Home = () => {
             <ApostleSection />
             <OtherTitles />
             <FeaturedSpecificSection />
-            <Footer />
         </div>
     );
 };

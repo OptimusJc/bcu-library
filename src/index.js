@@ -18,6 +18,7 @@ import Error from "./pages/error/Error";
 import SupportUs from "./pages/support/SupportUs";
 import Contact from "./pages/contact/Contact";
 import Admin from "./pages/admin/Admin";
+import Download from "./pages/download/Download";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -28,6 +29,8 @@ root.render(
             <Route path="" element={<App />}>
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/download/:id" element={<Download />} />
+
                 <Route
                     path="/news-and-magazines"
                     element={<NewsandMagazines />}
@@ -40,7 +43,7 @@ root.render(
                 <Route path="/cool-stuff" element={<CoolStuff />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/support" element={<SupportUs />} />
-                <Route element={<Error />} />
+                <Route path="*" element={<Error />} />
             </Route>
         </Routes>
     </BrowserRouter>

@@ -13,9 +13,22 @@ const Footer = () => {
             <div className={["footer"]}>
                 <div className="footer-logo">
                     <img src={footer_logo} alt="footer logo" />
+
+                    <ul className="footer-icons">
+                        <li>
+                            <Link to="" className="facebook">
+                                <FaFacebook />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="" className="youtube">
+                                <FaYoutube />
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
 
-                <div>
+                <div className="about_ul">
                     <ul>
                         <li>About</li>
                         <li>
@@ -65,18 +78,6 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <ul className="footer-icons">
-                    <li>
-                        <Link to="" className="facebook">
-                            <FaFacebook />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="" className="youtube">
-                            <FaYoutube />
-                        </Link>
-                    </li>
-                </ul>
                 <p>
                     &#169;2022. Body of Christ United Global International
                     Ministries

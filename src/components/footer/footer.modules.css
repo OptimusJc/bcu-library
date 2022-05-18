@@ -1,14 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-logo {
+    order: 5;
+}
+
 .footer-logo img {
-    width: 200px;
-    padding-block: 1rem;
+    width: 150px;
     margin-inline-start: -1rem;
+}
+
+.footer .about_ul {
+    margin-top: 1rem;
 }
 
 footer {
     color: var(--white);
 }
 footer ul {
-    padding-inline-start: 1rem;
+    padding: 0;
 }
 footer ul a {
     color: var(--purple-shade-1);
@@ -22,9 +34,16 @@ footer ul li:first-child {
     padding-block: 0.8rem;
 }
 
-.footer-bottom .footer-icons {
+.footer-icons {
     display: flex;
     align-items: center;
+}
+.footer-icons a svg {
+    width: 25px;
+    height: 25px;
+}
+.footer-icons a svg:first-child {
+    margin-inline-end: 2rem;
 }
 
 .footer-bottom p {
@@ -32,73 +51,39 @@ footer ul li:first-child {
     padding-block-end: 2rem;
 }
 
-.footer-bottom .footer-icons a svg {
-    width: 25px;
-    height: 25px;
-}
-.footer-bottom .footer-icons a svg:first-child {
-    margin-inline-end: 2rem;
-}
-
 @media (min-width: 48em) {
     footer .footer-logo img {
-        width: 150px;
+        width: 120px;
+    }
+
+    .footer .about_ul {
+        margin-top: 0;
     }
 
     .footer {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        padding-block-start: 2rem;
     }
-    .footer-bottom p {
-        text-align: center;
-    }
-    .footer-bottom .footer-icons {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .footer-bottom .footer-icons li:first-child {
-        margin-inline-end: 1rem;
+
+    .footer-icons a svg {
+        width: 20px;
+        height: 20px;
     }
 
     footer ul a {
         font-size: 0.8rem;
     }
-    footer ul li {
-        margin-block: 0;
+
+    .footer-bottom p {
+        text-align: center;
+        font-size: 0.8rem;
     }
 }
 
 @media (min-width: 64em) {
     .footer {
-        justify-content: space-around;
-        padding-block-start: 2rem;
-    }
-
-    .footer ul a {
-        font-size: 0.9rem;
-    }
-
-    .footer-bottom .footer-icons {
-        margin-bottom: 0;
-    }
-
-    .footer-bottom .footer-icons a svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .footer-bottom > p {
-        font-size: 0.9rem;
-        margin-bottom: 0;
-    }
-}
-
-@media (min-width: 85em) {
-    .footer ul li {
-        margin-block-end: 0.5rem;
-    }
-
-    .footer-bottom {
-        margin-inline-end: 6rem;
+        justify-content: space-evenly;
     }
 }

@@ -9,7 +9,7 @@ const Personality = () => {
         <section className="container">
             <div className="personality-section">
                 <div className="person_image">
-                    <img src={personality_image} alt="" />
+                    <img src="https://via.placeholder.com/400x400" alt="" />
                 </div>
                 <div className="person_bio animate__animated animate__bounce">
                     <h3>personality of the week</h3>

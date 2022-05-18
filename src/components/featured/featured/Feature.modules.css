@@ -28,8 +28,12 @@
 .feature ul {
     padding-inline-start: 0;
 }
+.feature ul li {
+    border-bottom: 1px solid hsla(264, 59%, 86%, 0.4);
+}
 .feature ul a {
     display: flex;
+    align-items: center;
     margin-block: 1rem;
 }
 .feature ul a div {
@@ -63,7 +67,8 @@
         flex-wrap: wrap;
     }
     .featured-container {
-        height: 260px;
+        height: 250px;
+        margin-top: 0.7rem;
     }
 }
 
@@ -82,7 +87,7 @@
     }
 }
 
-@media (min-width: 85em) {
+@media (min-width: 80em) {
     .featured {
         margin-inline-start: 1rem;
     }

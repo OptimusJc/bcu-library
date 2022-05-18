@@ -25,12 +25,17 @@ header .navbar_toggler {
     box-shadow: -3px -3px 9px var(--purple-shade-2);
     box-shadow: 3px 3px 9px var(--purple-shade-4);
 }
+.navbar_toggler:focus {
+    box-shadow: 0 0 15px 0rem;
+}
+
 header .navbar_toggler span,
 header .navbar_toggler span:before,
 header .navbar_toggler span:after {
     background-color: var(--purple-shade-4);
     border-radius: 4px;
     height: 4px;
+    width: 25px;
 }
 header .navbar_toggler span {
     position: relative;
@@ -43,10 +48,10 @@ header .navbar_toggler span:after {
     width: inherit;
 }
 header .navbar_toggler span:before {
-    top: -7px;
+    top: -8px;
 }
 header .navbar_toggler span:after {
-    bottom: -7px;
+    bottom: -8px;
 }
 
 .offcanvas_body {
@@ -106,13 +111,13 @@ header .navbar_toggler span:after {
 
 @media (min-width: 64rem) {
     .logo img {
-        width: 160px;
+        width: 180px;
     }
 
     header {
         padding: calc(20rem / 16) 1rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         max-width: 80rem;
         margin: auto;
@@ -132,6 +137,7 @@ header .navbar_toggler span:after {
     header .offcanvas_body {
         display: flex;
         margin-inline-start: 4rem;
+        justify-content: space-evenly;
         font-size: 0.8rem;
     }
 

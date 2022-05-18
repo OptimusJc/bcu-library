@@ -1,16 +1,16 @@
 .btn {
-	padding: 0.9rem 2rem;
-	font-size: calc(15rem / 16);
-	text-transform: capitalize;
-	color: var(--white);
-	border-radius: 3px;
-	border: none;
-	outline: none;
+    padding: 0.9rem 2rem;
+    font-size: calc(15rem / 16);
+    text-transform: capitalize;
+    color: var(--white);
+    border-radius: 3px;
+    border: none;
+    outline: none;
 }
 
 .read-more {
-	border: 1px solid var(--purple-shade-4);
-	padding: 1rem;
+    border: 1px solid var(--purple-shade-4);
+    padding: 1rem;
 }
 
 /* .input {
