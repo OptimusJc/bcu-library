@@ -86,4 +86,8 @@ footer ul li:first-child {
     .footer {
         justify-content: space-evenly;
     }
+
+    .footer ul a {
+        font-size: 0.9rem;
+    }
 }

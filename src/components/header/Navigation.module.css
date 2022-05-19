@@ -62,6 +62,7 @@ header .navbar_toggler span:after {
 }
 .offcanvas_body li a {
     color: var(--white);
+    font-size: 1rem;
 }
 .offcanvas_body .nav-item .nav-link:active {
     color: var(--purple-shade-2);
@@ -152,11 +153,19 @@ header .navbar_toggler span:after {
             var(--purple-shade-3)
         );
     }
+
+    .offcanvas_body li a {
+        font-size: 0.85rem;
+    }
 }
 
-@media (min-width: 85rem) {
+@media (min-width: 80rem) {
     header .offcanvas_body {
         font-size: 0.9rem;
         margin-inline-start: 6rem;
+    }
+
+    .offcanvas_body li a {
+        font-size: 1rem;
     }
 }

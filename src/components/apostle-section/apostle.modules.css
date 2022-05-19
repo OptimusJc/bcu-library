@@ -33,7 +33,8 @@
 }
 
 @media (min-width: 48em) {
-    .apostle-section .feature-container .card {
+    .apostle-section .apostle_card {
         width: 300px;
+        height: auto;
     }
 }

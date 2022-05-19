@@ -8,7 +8,11 @@ const Cards = ({ custom_style }) => {
             // data-aos="fade-right"
             // data-aos-delay="10"
         >
-            <img src={randomImage} className="card-img-top" alt="..." />
+            <img
+                src="https://via.placeholder.com/300x200"
+                className="card-img-top"
+                alt="..."
+            />
             <div className="card-body">
                 <h5 className="card-title">lorem ipsum dolor amet</h5>
                 <p className="card-text">

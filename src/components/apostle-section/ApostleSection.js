@@ -6,13 +6,12 @@ const ApostleSection = () => {
         <section className="container apostle-section">
             <h3>Apostle Dr La Marco Nesbit</h3>
             <div className="feature-container">
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
+                <Cards custom_style="apostle_card" />
+                <Cards custom_style="apostle_card" />
+                <Cards custom_style="apostle_card" />
+                <Cards custom_style="apostle_card" />
+                <Cards custom_style="apostle_card" />
+                <Cards custom_style="apostle_card" />
             </div>
         </section>
     );

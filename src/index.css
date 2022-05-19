@@ -1,20 +1,38 @@
 /* * My Custom Styles */
 :root {
-    --default-font: "poppins";
     --purple-shade-1: hsl(264, 59%, 86%);
     --purple-shade-2: hsl(263, 88%, 64%);
     --purple-shade-3: hsl(263, 61%, 40%);
     --purple-shade-4: hsl(264, 100%, 13%);
     --white: #f9f9f9;
 
-    --size-1: 15px;
+    --font-family-sans-serif:
+  // Cross-platform generic font family (default user interface font)
+        system-ui,
+        // Safari for macOS and iOS (San Francisco)
+        -apple-system,
+        // Windows
+        "Segoe UI",
+        // Android
+        Roboto,
+        // older macOS and iOS
+        "Helvetica Neue" // Linux
+        "Noto Sans",
+        "Liberation Sans",
+        // Basic web fallback
+        Arial,
+        // Sans serif fallback
+        sans-serif,
+        // Emoji fonts
+        "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: var(--default-font) !important;
+    font-family: var(--font-family-sans-serif);
 }
 
 body {

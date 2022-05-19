@@ -16,7 +16,8 @@
 }
 
 @media (min-width: 64em) {
-    .other-section .other_section_card {
+    .other-section .other_section_card,
+    .apostle-section .apostle_card {
         width: 290px;
     }
     .other-section .other_section_card .card-body {
@@ -36,5 +37,12 @@
         border-radius: 20px;
         border: 6px solid transparent;
         background-clip: content-box;
+    }
+}
+
+@media (min-width: 80em) {
+    .other-section .other_section_card,
+    .apostle-section .apostle_card {
+        width: 320px;
     }
 }

@@ -107,7 +107,7 @@ function Navigation() {
                                         >
                                             <li>
                                                 <Link
-                                                    to="/stream-and-download/ebooks"
+                                                    to="/ebooks"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={ebook} alt="" />
@@ -116,7 +116,7 @@ function Navigation() {
                                             </li>
                                             <li>
                                                 <Link
-                                                    to="/stream-and-download/ebooks"
+                                                    to="/songs"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={music} alt="" />
@@ -125,7 +125,7 @@ function Navigation() {
                                             </li>
                                             <li>
                                                 <Link
-                                                    to="/stream-and-download/ebooks"
+                                                    to="/podcasts"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={podcast} alt="" />
@@ -134,7 +134,7 @@ function Navigation() {
                                             </li>
                                             <li>
                                                 <Link
-                                                    to="/stream-and-download/ebooks"
+                                                    to="/series"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={series} alt="" />
