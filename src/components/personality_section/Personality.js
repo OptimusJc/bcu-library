@@ -2,8 +2,6 @@ import "./Personality.modules.css";
 import Button from "../buttons/Button";
 import "../buttons/button.modules.css";
 
-import personality_image from "../../assets/images/placeholder/256x471.jpg";
-
 const Personality = () => {
     return (
         <section className="container">

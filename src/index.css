@@ -6,8 +6,8 @@
     --purple-shade-4: hsl(264, 100%, 13%);
     --white: #f9f9f9;
 
-    --font-family-sans-serif:
-  // Cross-platform generic font family (default user interface font)
+    --font-family-sans-serif: "Lora",
+        // Cross-platform generic font family (default user interface font)
         system-ui,
         // Safari for macOS and iOS (San Francisco)
         -apple-system,
@@ -33,6 +33,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-family-sans-serif);
+    /* font-family: "poppins", sans-serif; */
 }
 
 body {

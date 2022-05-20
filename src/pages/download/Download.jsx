@@ -6,7 +6,8 @@ import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { fireStorage } from "../../firebase";
 import { ref, getDownloadURL } from "firebase/storage";
-import Axios from "axios";
+import { useState } from "react";
+import { Toast } from "bootstrap";
 
 const Download = () => {
     let { id } = useParams();
@@ -17,38 +18,37 @@ const Download = () => {
     const title = location.state.document_title.title.split(".")[0];
     const title_url = location.state.document_url.path;
 
+    // states
+    let [progress, setProgress] = useState(0);
+
     const download = () => {
         const httpReference = ref(fireStorage, title_url);
 
-        // console.log(httpReference);
+        // the toast
+        const toastToShow = document.getElementById("liveToast");
+        const toast = new Toast(toastToShow);
+        toast.show();
 
         getDownloadURL(httpReference)
             .then((url) => {
                 // This can be downloaded directly:
-                // const xhr = new XMLHttpRequest();
-                // xhr.responseType = "blob";
-                // xhr.onload = (event) => {
-                //     const blob = xhr.response;
-                //     fileDownload(blob, `${title}.mp3`);
-                // };
-                // xhr.open("GET", url);
-                // xhr.send();
+                const xhr = new XMLHttpRequest();
+                xhr.responseType = "blob";
+                xhr.open("GET", url, true);
+                xhr.send();
 
-                Axios.get(url, {
-                    responseType: "blob",
-                }).then((res) => {
-                    fileDownload(res.data, `${title}.mp3`);
-                });
+                // on progress
+                xhr.onprogress = (e) => {
+                    progress = Math.floor((e.loaded / e.total) * 100);
+                    setProgress(progress);
+                };
 
-                // const file = document.createElement("a");
-                // if (file.download !== undefined) {
-                //     file.setAttribute("href", url);
-                //     file.setAttribute("target", "_blank");
-                //     file.style.visibility = "hidden";
-                //     document.body.appendChild(file);
-                //     file.click();
-                //     document.body.removeChild(file);
-                // }
+                // on complete
+                xhr.onload = (e) => {
+                    const blob = xhr.response;
+                    // console.log(blob.type.split("/")[1]);
+                    fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
+                };
             })
             .catch((error) => {
                 console.log(error.message);
@@ -83,6 +83,62 @@ const Download = () => {
                                 styles.share,
                             ].join(" ")}
                         />
+
+                        <div className="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div
+                                id="liveToast"
+                                className={["toast", styles.toast].join(" ")}
+                                role="alert"
+                                aria-live="assertive"
+                                aria-atomic="true"
+                                data-bs-autohide="false"
+                            >
+                                <div
+                                    className={[
+                                        "toast-header",
+                                        styles.toast_header,
+                                    ].join(" ")}
+                                >
+                                    <img
+                                        src="http://via.placeholder.com/20x20"
+                                        className="rounded me-2"
+                                        alt="..."
+                                    />
+                                    <strong className="me-auto">
+                                        Downloading...
+                                    </strong>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="toast"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div
+                                    className={[
+                                        "toast-body",
+                                        styles.toast_body,
+                                    ].join(" ")}
+                                >
+                                    {/* progress bar */}
+                                    <div
+                                        className="progress mt-4"
+                                        style={{ flexDirection: "column" }}
+                                    >
+                                        <div
+                                            className="progress-bar progress-bar-striped "
+                                            role="progressbar"
+                                            style={{ width: `${progress}%` }}
+                                            aria-valuenow={progress}
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                        >
+                                            {/* {progress}Name */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <img

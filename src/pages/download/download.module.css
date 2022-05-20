@@ -47,6 +47,20 @@
     width: 100%;
 }
 
+.toast {
+    background-color: rgb(224 121 235 / 85%);
+}
+.toast .toast_header {
+    margin-inline-end: 0 !important;
+    padding-block: 1.5rem;
+}
+.toast .toast_header > button {
+    margin-top: 0 !important;
+}
+.toast .toast_body div:first-child {
+    margin-inline-end: 0 !important;
+}
+
 @media (min-width: 48em) {
     .row .col {
         flex-direction: row;

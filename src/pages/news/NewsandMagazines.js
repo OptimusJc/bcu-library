@@ -2,7 +2,7 @@ function NewsandMagazines() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
+                <div className="col ">
                     <p className="display-4 ">
                         Welcome to the News & Magazines sections of the library.
                     </p>

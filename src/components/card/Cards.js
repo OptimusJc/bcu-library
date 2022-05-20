@@ -1,5 +1,4 @@
 import "./cards.modules.css";
-import randomImage from "../../assets/images/placeholder/a-book-g793b9761e_640.jpg";
 
 const Cards = ({ custom_style }) => {
     return (

@@ -41,7 +41,6 @@ function Navigation() {
                                 "offcanvas",
                                 "offcanvas-end",
                             ].join(" ")}
-                            // tabindex="-1"
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"
                         >
@@ -147,7 +146,7 @@ function Navigation() {
                                     <li className="nav-item dropdown">
                                         <a
                                             className="nav-link dropdown-toggle"
-                                            href="#"
+                                            href=""
                                             id="offcanvasNavbarDropdown"
                                             role="button"
                                             data-bs-toggle="dropdown"
