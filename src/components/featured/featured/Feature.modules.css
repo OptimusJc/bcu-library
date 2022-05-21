@@ -94,6 +94,7 @@
     .feature-container-specific {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .featured-container {
         height: 240px;

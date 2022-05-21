@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BiTime } from "react-icons/bi";
 
 import "./Feature.modules.css";
-import { doc } from "firebase/firestore";
+// import { doc } from "firebase/firestore";
 
 const Feature = ({ title, author, date, path, doc_id }) => {
     return (

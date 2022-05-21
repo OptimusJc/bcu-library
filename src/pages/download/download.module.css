@@ -48,7 +48,7 @@
 }
 
 .toast {
-    background-color: rgb(224 121 235 / 85%);
+    background-color: rgba(237, 78, 255, 0.85);
 }
 .toast .toast_header {
     margin-inline-end: 0 !important;

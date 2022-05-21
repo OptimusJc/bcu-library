@@ -1,6 +1,6 @@
 import "./cards.modules.css";
 
-const Cards = ({ custom_style }) => {
+const Cards = ({ custom_style, title }) => {
     return (
         <div
             className={["card", custom_style].join(" ")}
@@ -13,10 +13,13 @@ const Cards = ({ custom_style }) => {
                 alt="..."
             />
             <div className="card-body">
-                <h5 className="card-title">lorem ipsum dolor amet</h5>
+                <h5 className="card-title">
+                    {title != null ? title : "Title of the message goes here"}
+                </h5>
                 <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    {title != null
+                        ? title
+                        : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"}
                 </p>
             </div>
         </div>

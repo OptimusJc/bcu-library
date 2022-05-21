@@ -14,15 +14,23 @@ const Download = () => {
     const location = useLocation();
     const fileDownload = require("js-file-download");
 
-    // * Get data from the file using useLocation hook from react
-    const title = location.state.document_title.title.split(".")[0];
-    const title_url = location.state.document_url.path;
-
     // states
     let [progress, setProgress] = useState(0);
 
+    const [titleUrl, setTitleUrl] = useState(location.state.document_url.path);
+
+    const title = location.state.document_title.title.split(".")[0];
+    const from = location.state.from;
+    // * Get data from the file using useLocation hook from react
+    // const title_url = location.state.document_url.path;
+    if (from === "otherTitle") {
+        setTitleUrl(location.state.document_url);
+    }
+    // else {
+    //     setTitleUrl(location.state.document_url.path);
+    // }
     const download = () => {
-        const httpReference = ref(fireStorage, title_url);
+        const httpReference = ref(fireStorage, titleUrl);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");
@@ -128,12 +136,16 @@ const Download = () => {
                                         <div
                                             className="progress-bar progress-bar-striped "
                                             role="progressbar"
-                                            style={{ width: `${progress}%` }}
+                                            style={{
+                                                width: `${progress}%`,
+                                                backgroundColor:
+                                                    "hsl(263, 88%, 64%)",
+                                            }}
                                             aria-valuenow={progress}
                                             aria-valuemin="0"
                                             aria-valuemax="100"
                                         >
-                                            {/* {progress}Name */}
+                                            {progress}
                                         </div>
                                     </div>
                                 </div>
