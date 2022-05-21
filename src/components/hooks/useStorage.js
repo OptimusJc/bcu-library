@@ -10,7 +10,6 @@ const useStorage = (files) => {
 
     useEffect(() => {
         try {
-            // files.forEach((file) => {
             // references
             const storageRef = ref(fireStorage, `podcasts/${files.name}`);
             const collectionRef = collection(fireStore, `podcasts`);
@@ -59,7 +58,6 @@ const useStorage = (files) => {
                     }
                 }
             );
-            // });
         } catch (err) {
             console.log(`Error from useStorage: ${err}`);
         }

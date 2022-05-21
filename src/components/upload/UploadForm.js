@@ -1,86 +1,76 @@
 import { useState } from "react";
 import Progress from "../progress/Progress";
 
-const filess = [
-    {
-        name: "Apostle.-Dr.-Mariah-2.mp3",
-        url: "https://firebasestorage.googleapis.com/v0/b/bcu-library.appspot.com/o/podcasts%2Fundefined?alt=media&token=6af03b6e-0d22-401f-9a60-71a35d3ffc7b",
-        date: "May 14, 2022",
-    },
-    {
-        name: "Apostle.-Dr.-Mariah-2.mp3",
-        url: "https://firebasestorage.googleapis.com/v0/b/bcu-library.appspot.com/o/podcasts%2Fundefined?alt=media&token=6af03b6e-0d22-401f-9a60-71a35d3ffc7b",
-        date: "May 14, 2022",
-    },
-];
-
 const UploadForm = () => {
     // const [files, setFiles] = useState([]);
     const [file, setFile] = useState(null);
     const [error, setError] = useState(null);
     // const [collectionName, setCollectionName] = useState("");
 
+    // * Trial 1 gets single files [start]
     const onChangeHandler = (e) => {
-        // * Get the file selected
+        // * Get the single file selected
         const selected = e.target.files[0];
-        console.log(
-            `All files selected for upload: ${Array.from(e.target.files).map(
-                (file) => file
-            )}`
-        );
-        // const arraySelected = Array.from(selected);
+
+        // console.log(selected);
 
         // * file types
         const types = ["audio/mpeg", "audio/mp3", "video/mp4", "video/mpeg"];
+        // const types = ["application/pdf", "application/epub+zip"];
 
         if (selected && types.includes(selected.type)) {
-            // arraySelected.forEach((docFile) => {
-            //     if (types.includes(docFile.type)) {
-            //         setFiles(files.push(docFile));
-            //     }
-            // });
             setFile(selected);
-
             setError("");
         } else {
             setFile(null);
             setError("Please select an audio or video file");
+            // setError("Please select a pdf or epub file");
         }
     };
-    // const changeCollection = () => {
-    //     const radios = document.getElementsByName("flexRadioDefault");
+    // * [end]
 
-    //     for (let i = 0; i < radios.length; i++) {
-    //         if (radios[i].checked) {
-    //             setCollectionName(radios[i].value);
-    //             break;
-    //         }
-    //     }
-    // };
+    // * Trial 2
+    // const radios = document.querySelectorAll("input[type='radio']");
 
-    // const callOtherFunctions = () => {
-    //     changeCollection();
-    //     onChangeHandler();
-    // };
-
-    // const callOtherFunctions = () => {
-    //     return new Promise((resolve, reject) => {
-    //         setTimeout(() => {
-    //             const error = false;
-
-    //             if (!error) {
-    //                 resolve();
-    //             } else {
-    //                 reject(`Something went wrong!`);
-    //             }
-    //         }, 100);
+    // const onChangeHandler = (e) => {
+    //     // Take in selected files
+    //     const filesSelected = e.target.files;
+    //     filesSelected.map((file) => {
+    //         console.log(file);
     //     });
-    // };
 
-    // callOtherFunctions()
-    //     .then(changeCollection, onChangeHandler)
-    //     // .then(onChangeHandler)
-    //     .catch((err) => console.log(`::${err}`));
+    //     const fileTypes = ["pdf", "epub"];
+    //     const audioTypes = ["mp3", "mpeg", "mp4"];
+
+    //     radios.forEach((radio) => {
+    //         if (!radio.checked) {
+    //             setError("You need to to choose a collection!");
+    //         } else if (radio.value === "ebooks") {
+    //             if (fileTypes.includes(radio.type)) {
+    //             } else {
+    //                 setError("Allowed file types include [epub,pdf]");
+    //             }
+    //         } else if (radio.value === "podcasts") {
+    //             if (audioTypes.includes(radio.type)) {
+    //                 filesSelected.map((fileSelected) => {
+    //                     console.log(fileSelected);
+    //                 });
+    //             } else {
+    //                 setError("Allowed file types include [mp3, mpeg, mp4]");
+    //             }
+    //         }
+    //     });
+
+    // Array.from(filesSelected).map((fileSelected) => {
+
+    // });
+
+    // Choose a collection to upload to
+
+    // Set the files array
+
+    // Set the collection
+    // };
 
     return (
         <form>

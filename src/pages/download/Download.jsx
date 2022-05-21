@@ -17,20 +17,18 @@ const Download = () => {
     // states
     let [progress, setProgress] = useState(0);
 
-    const [titleUrl, setTitleUrl] = useState(location.state.document_url.path);
-
     const title = location.state.document_title.title.split(".")[0];
     const from = location.state.from;
+    let title_url = "";
     // * Get data from the file using useLocation hook from react
-    // const title_url = location.state.document_url.path;
     if (from === "otherTitle") {
-        setTitleUrl(location.state.document_url);
+        title_url = location.state.document_url;
+    } else {
+        title_url = location.state.document_url.path;
     }
-    // else {
-    //     setTitleUrl(location.state.document_url.path);
-    // }
+
     const download = () => {
-        const httpReference = ref(fireStorage, titleUrl);
+        const httpReference = ref(fireStorage, title_url);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");

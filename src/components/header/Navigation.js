@@ -144,16 +144,16 @@ function Navigation() {
                                     </li>
 
                                     <li className="nav-item dropdown">
-                                        <a
+                                        <Link
+                                            to="#"
                                             className="nav-link dropdown-toggle"
-                                            href=""
                                             id="offcanvasNavbarDropdown"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false"
                                         >
                                             Cool Stuff
-                                        </a>
+                                        </Link>
                                         <ul
                                             className={[
                                                 "dropdown-menu",
