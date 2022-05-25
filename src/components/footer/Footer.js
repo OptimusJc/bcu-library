@@ -43,16 +43,16 @@ const Footer = () => {
                     <ul>
                         <li>Resources</li>
                         <li>
-                            <Link to="">Ebooks</Link>
+                            <Link to="/ebooks">Ebooks</Link>
                         </li>
                         <li>
-                            <Link to="">Collections</Link>
+                            <Link to="/series">Collections</Link>
                         </li>
                         <li>
-                            <Link to="">Messages</Link>
+                            <Link to="/podcasts">Messages</Link>
                         </li>
                         <li>
-                            <Link to="">Songs</Link>
+                            <Link to="/songs">Songs</Link>
                         </li>
                     </ul>
                 </div>

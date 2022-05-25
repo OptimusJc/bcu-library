@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../../index.css";
 import classes from "./Navigation.module.css";
 import logo from "../../assets/images/bcu_logo.png";
 
@@ -41,6 +40,7 @@ function Navigation() {
                                 "offcanvas",
                                 "offcanvas-end",
                             ].join(" ")}
+                            tab-index="-1"
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"
                         >
@@ -58,12 +58,18 @@ function Navigation() {
                                     }}
                                 ></button>
                             </div>
-                            <div className={classes.offcanvas_body}>
+                            <div
+                                className={[
+                                    "offcanvas-body",
+                                    classes.offcanvas_body,
+                                ].join(" ")}
+                            >
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item">
                                         <Link
                                             to="/"
                                             className="nav-link active"
+                                            aria-current="page"
                                         >
                                             Home
                                         </Link>
@@ -88,7 +94,8 @@ function Navigation() {
                                     {/* stream and download link  */}
                                     <li className="nav-item dropdown">
                                         <a
-                                            className="nav-link dropdown-toggle"
+                                            class="nav-link 
+                                    dropdown-toggle"
                                             href="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"

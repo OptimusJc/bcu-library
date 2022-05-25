@@ -52,7 +52,6 @@ const Download = () => {
                 // on complete
                 xhr.onload = (e) => {
                     const blob = xhr.response;
-                    // console.log(blob.type.split("/")[1]);
                     fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
                 };
             })

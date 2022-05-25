@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
+    padding-block-end: 0.5rem;
 }
 
 .footer .footer-logo {
@@ -46,9 +47,8 @@ footer ul li:first-child {
     margin-inline-end: 2rem;
 }
 
-.footer-bottom p {
+.footer-bottom {
     padding-block: 1rem;
-    padding-block-end: 2rem;
 }
 
 @media (min-width: 48em) {

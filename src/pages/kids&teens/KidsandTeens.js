@@ -2,7 +2,7 @@ function KidsandTeens() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
+                <div className="col" style={{ height: "500px" }}>
                     <p className="display-4 ">
                         Welcome to the kids & teens sections of the library.
                     </p>
