@@ -12,7 +12,7 @@ const Hero = () => {
             <section className="hero">
                 <p className="display">Search the Library Catalog</p>
                 <Button title="search" classes="btn btn-search" />
-                <Input />
+                <Input type="text" placeholder="Search" id="search" />
             </section>
         </div>
     );

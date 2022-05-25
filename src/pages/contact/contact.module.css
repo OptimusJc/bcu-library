@@ -1,0 +1,148 @@
+.containment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.containment .lets_talk p:first-child {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.containment .lets_talk p:nth-of-type(2) {
+    text-transform: capitalize;
+    width: 350px;
+    font-size: 2.3rem;
+}
+
+.containment .send_message {
+    background-color: var(--bs-white);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.containment .send_message h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.containment .send_message form input,
+.containment .send_message form textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--purple-shade-3);
+    padding: 1rem 1.2rem;
+    color: var(--purple-shade-3);
+}
+
+.containment .send_message form input:focus,
+.containment .send_message form textarea:focus {
+    box-shadow: 0 0 0 0.25rem hsl(263, 88%, 84%);
+}
+
+.containment .send_message form .btn_submit {
+    padding: 0.8rem 2.5rem;
+    box-shadow: 3px 3px 9px var(--purple-shade-1);
+    background-color: var(--purple-shade-3);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-block: 3rem 2rem;
+}
+.socials div {
+    margin-block-end: 1.5rem;
+}
+
+.socials div span {
+    margin-inline: 0.8rem;
+}
+.socials div svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    color: var(--purple-shade-4);
+}
+
+@media (min-width: 48em) {
+    .socials {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .containment {
+        margin-inline: auto;
+        width: 600px;
+    }
+
+    .containment .lets_talk p:first-child {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 64em) {
+    .background_color {
+        padding: 300px;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        background-color: var(--purple-shade-1);
+    }
+
+    .containment {
+        margin-inline: 0;
+        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .containment .lets_talk p:first-child {
+        font-size: 1.2rem;
+    }
+    .containment .lets_talk p:nth-of-type(2) {
+        text-transform: capitalize;
+        width: 350px;
+        font-size: 3rem;
+    }
+
+    .containment .send_message {
+        padding: 2rem;
+        width: 400px;
+        border-radius: 8px;
+        margin-top: 8rem;
+    }
+    .containment .send_message h3 {
+        text-transform: capitalize;
+    }
+
+    .containment .send_message form input,
+    .containment .send_message form textarea {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid var(--purple-shade-3);
+        padding: 1rem 1.2rem;
+        color: var(--purple-shade-3);
+    }
+
+    .containment .send_message form .btn_submit {
+        padding: 0.8rem 2rem;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-evenly;
+        padding-block: 2rem;
+        margin-block: 4rem 3rem;
+    }
+
+    .socials div span {
+        margin-inline: 0.8rem;
+    }
+    .socials div svg {
+        width: 1.3rem;
+        height: 1.3rem;
+        color: var(--purple-shade-3);
+    }
+}
