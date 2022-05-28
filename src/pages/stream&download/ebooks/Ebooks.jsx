@@ -47,8 +47,6 @@ const Ebooks = () => {
                                 spiritual_ebook_data.map((doc) => {
                                     const { title, url } = doc;
 
-                                    console.log(doc);
-
                                     return (
                                         <Link
                                             to={`/download/${doc.id}`}

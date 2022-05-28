@@ -29,12 +29,10 @@ const Download = () => {
         title_url = location.state.document_url.path;
     }
 
-    console.log(title_url);
+    console.log(location.state);
 
     const download = () => {
         const httpReference = ref(fireStorage, title_url);
-
-        console.log(`this is the log ${httpReference}`);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");
@@ -116,7 +114,9 @@ const Download = () => {
                                         alt="..."
                                     />
                                     <strong className="me-auto">
-                                        Downloading...
+                                        {progress !== 100
+                                            ? "Downloading..."
+                                            : "Downloaded"}
                                     </strong>
                                     <button
                                         type="button"
