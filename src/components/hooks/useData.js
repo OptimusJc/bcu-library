@@ -1,9 +1,9 @@
 import useFirestore from "../hooks/useFirestore";
 
 const useData = () => {
-    const docs = useFirestore("podcasts");
+    const podcast_data = useFirestore("podcasts");
 
-    return docs;
+    return [podcast_data];
 };
 
 export default useData;

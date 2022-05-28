@@ -23,12 +23,18 @@ const Download = () => {
     // * Get data from the file using useLocation hook from react
     if (from === "otherTitle") {
         title_url = location.state.document_url;
+    } else if (from === "spiritual_ebooks") {
+        title_url = location.state.document_url;
     } else {
         title_url = location.state.document_url.path;
     }
 
+    console.log(title_url);
+
     const download = () => {
         const httpReference = ref(fireStorage, title_url);
+
+        console.log(`this is the log ${httpReference}`);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");

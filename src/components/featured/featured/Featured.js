@@ -5,14 +5,14 @@ import useData from "../../hooks/useData";
 
 const Featured = () => {
     // * Get docs array from useFirestore
-    const docs = useData();
+    const [podcast_data] = useData();
 
     return (
         <div className="featured">
             <h3>Featured</h3>
             <div className="featured-container">
-                {docs &&
-                    docs.map((doc) => {
+                {podcast_data &&
+                    podcast_data.map((doc) => {
                         const date = doc.createdAt.toDate().toDateString();
                         return (
                             <Feature

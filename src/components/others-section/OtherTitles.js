@@ -10,14 +10,14 @@ import useData from "../hooks/useData";
 
 const OtherTitles = () => {
     // get data
-    const docs = useData();
+    const [podcast_data] = useData();
 
     return (
         <section className="other-section container">
             <h3>Explore other messages</h3>
             <div className="feature-container">
-                {docs &&
-                    docs.map((doc) => {
+                {podcast_data &&
+                    podcast_data.map((doc) => {
                         // store states to be used by useLocation in the
                         // download component
                         const { title, url } = doc;

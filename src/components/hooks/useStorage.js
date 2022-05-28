@@ -11,8 +11,14 @@ const useStorage = (files) => {
     useEffect(() => {
         try {
             // references
-            const storageRef = ref(fireStorage, `podcasts/${files.name}`);
-            const collectionRef = collection(fireStore, `podcasts`);
+            const storageRef = ref(
+                fireStorage,
+                `ebooks/spiritual_ebooks/${files.name}`
+            );
+            const collectionRef = collection(
+                fireStore,
+                `ebooks/spiritual_ebook/spiritual_ebooks`
+            );
 
             const uploadTask = uploadBytesResumable(storageRef, files);
 

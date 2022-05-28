@@ -14,10 +14,10 @@ import SupportUs from "./pages/support/SupportUs";
 import Contact from "./pages/contact/Contact";
 import Admin from "./pages/admin/Admin";
 import Download from "./pages/download/Download";
-import Ebooks from "./pages/stream&download/Ebooks";
-import Songs from "./pages/stream&download/Songs";
-import Series from "./pages/stream&download/Series";
-import Podcasts from "./pages/stream&download/Podcasts";
+import Ebooks from "./pages/stream&download/ebooks/Ebooks";
+import Songs from "./pages/stream&download/songs/Songs";
+import Series from "./pages/stream&download/series/Series";
+import Podcasts from "./pages/stream&download/podcasts/Podcasts";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

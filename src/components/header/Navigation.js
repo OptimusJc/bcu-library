@@ -93,17 +93,17 @@ function Navigation() {
 
                                     {/* stream and download link  */}
                                     <li className="nav-item dropdown">
-                                        <a
-                                            class="nav-link 
+                                        <Link
+                                            className="nav-link 
                                     dropdown-toggle"
-                                            href="#"
+                                            to="#"
                                             id="offcanvasNavbarDropdown"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false"
                                         >
                                             Stream & Download
-                                        </a>
+                                        </Link>
                                         <ul
                                             className={[
                                                 "dropdown-menu",
