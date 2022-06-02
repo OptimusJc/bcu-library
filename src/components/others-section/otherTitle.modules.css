@@ -13,6 +13,11 @@
 }
 .other-section .card-text {
     color: var(--purple-shade-1);
+    text-transform: capitalize;
+}
+
+.other_section_card .card-body {
+    text-transform: capitalize;
 }
 
 @media (min-width: 64em) {

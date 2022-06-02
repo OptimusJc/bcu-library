@@ -14,10 +14,9 @@
 
 .card .card-body .card-title {
     text-transform: capitalize;
+    font-size: 1rem;
 }
 
-@media (min-width: 64em) {
-    .card .card-body .card-title {
-        margin-block-end: 1.2rem;
-    }
+.card .card-body .card-text {
+    text-transform: capitalize;
 }

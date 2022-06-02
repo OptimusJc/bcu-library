@@ -29,17 +29,16 @@ const Download = () => {
         title_url = location.state.document_url.path;
     }
 
-    console.log(location.state);
-
     const download = () => {
         const httpReference = ref(fireStorage, title_url);
+        console.log(httpReference);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");
         const toast = new Toast(toastToShow);
         toast.show();
 
-        getDownloadURL(httpReference)
+        getDownloadURL(`this is the reference: ${httpReference}`)
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();

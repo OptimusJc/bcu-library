@@ -14,10 +14,14 @@ import SupportUs from "./pages/support/SupportUs";
 import Contact from "./pages/contact/Contact";
 import Admin from "./pages/admin/Admin";
 import Download from "./pages/download/Download";
-import Ebooks from "./pages/stream&download/ebooks/Ebooks";
 import Songs from "./pages/stream&download/songs/Songs";
 import Series from "./pages/stream&download/series/Series";
 import Podcasts from "./pages/stream&download/podcasts/Podcasts";
+// ? ebooks
+import Ebooks from "./pages/stream&download/ebooks/Ebooks";
+import CookBooks from "./pages/stream&download/ebooks/CookBooks";
+import SpiritualBooks from "./pages/stream&download/ebooks/SpiritualBooks";
+import EducationalBooks from "./pages/stream&download/ebooks/EducationalBooks";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -35,7 +39,12 @@ root.render(
                     element={<NewsandMagazines />}
                 />
                 <Route path="/kids-and-teens" element={<KidsandTeens />} />
-                <Route path="/ebooks" element={<Ebooks />} />
+                <Route path="/ebooks" element={<Ebooks />}>
+                    <Route path="spiritual" element={<SpiritualBooks />} />
+                    <Route path="cooking" element={<CookBooks />} />
+                    <Route path="educational" element={<EducationalBooks />} />
+                </Route>
+                {/* <Route path="/cookbooks" element={<CookBooks />} /> */}
                 <Route path="/songs" element={<Songs />} />
                 <Route path="/podcasts" element={<Podcasts />} />
                 <Route path="/series" element={<Series />} />
