@@ -15,9 +15,13 @@ const Ebooks = () => {
                 <div className="row">
                     <div className="col">
                         <div className="other-section">
-                            <h3 className="mb-4">
-                                Welcome to the ebooks section
-                            </h3>
+                            <h2 className={["mb-4", styles.h2].join(" ")}>
+                                BCU library ebooks section
+                            </h2>
+                            <p>
+                                Find an assortment of books from our different
+                                catalogs
+                            </p>
                             <ul
                                 className={[
                                     "nav nav-tabs",
@@ -55,8 +59,10 @@ const Ebooks = () => {
                                 ].join(" ")}
                             >
                                 {
-                                    /* enter ebooks body here */
-
+                                    /* 
+                                    Use <Outlet/> component to cycle through 
+                                    the url params and render the appropriate component 
+                                   */
                                     <Outlet />
                                 }
                             </div>

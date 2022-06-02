@@ -41,6 +41,7 @@ const Stream = () => {
                 <ul>
                     <li>
                         <StreamLink
+                            to="/ebooks/spiritual"
                             imgSrc={ebook}
                             title="Ebook"
                             // onClick={animate}
@@ -49,6 +50,7 @@ const Stream = () => {
                     </li>
                     <li>
                         <StreamLink
+                            to="/songs"
                             imgSrc={music}
                             title="Songs"
                             classes="animate__animated animate__headShake"
@@ -56,6 +58,7 @@ const Stream = () => {
                     </li>
                     <li>
                         <StreamLink
+                            to="/podcasts"
                             imgSrc={podcast}
                             title="Podcasts"
                             classes="animate__animated animate__headShake"
@@ -63,6 +66,7 @@ const Stream = () => {
                     </li>
                     <li>
                         <StreamLink
+                            to="/series"
                             imgSrc={series}
                             title="Series"
                             classes="animate__animated animate__headShake"

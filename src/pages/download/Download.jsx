@@ -19,12 +19,18 @@ const Download = () => {
 
     const title = location.state.document_title.title.split(".")[0];
     const from = location.state.from;
-    let title_url = "";
+    let title_url;
+
     // * Get data from the file using useLocation hook from react
     if (from === "otherTitle") {
         title_url = location.state.document_url;
-    } else if (from === "spiritual_ebooks") {
-        title_url = location.state.document_url;
+    } else if (
+        from === "spiritual_ebooks" ||
+        from === "cooking_ebooks" ||
+        from === "educational_ebooks"
+    ) {
+        const title_object = location.state.document_url;
+        title_url = Object.values(title_object);
     } else {
         title_url = location.state.document_url.path;
     }
@@ -38,7 +44,7 @@ const Download = () => {
         const toast = new Toast(toastToShow);
         toast.show();
 
-        getDownloadURL(`this is the reference: ${httpReference}`)
+        getDownloadURL(httpReference)
             .then((url) => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
@@ -56,6 +62,10 @@ const Download = () => {
                 xhr.onload = (e) => {
                     const blob = xhr.response;
                     fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
+                    // hide the toast after donwload is complete
+                    setTimeout(() => {
+                        toast.hide();
+                    }, 2000);
                 };
             })
             .catch((error) => {
