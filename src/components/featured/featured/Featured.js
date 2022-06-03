@@ -7,6 +7,7 @@ const Featured = () => {
     // * Get docs array from useFirestore
     const [podcast_data] = useData();
 
+    console.log(podcast_data);
     return (
         <div className="featured">
             <h3>Featured</h3>

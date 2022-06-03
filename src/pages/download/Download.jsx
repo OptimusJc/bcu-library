@@ -67,7 +67,6 @@ const Download = () => {
                     }, 2000);
 
                     // const file_url = document.createObjectURL(this.response);
-
                     // const link = document.createElement("a");
                     // link.href = file_url;
                     // link.setAttribute(
