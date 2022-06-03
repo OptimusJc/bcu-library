@@ -22,6 +22,7 @@ import Ebooks from "./pages/stream&download/ebooks/Ebooks";
 import CookBooks from "./pages/stream&download/ebooks/CookBooks";
 import SpiritualBooks from "./pages/stream&download/ebooks/SpiritualBooks";
 import EducationalBooks from "./pages/stream&download/ebooks/EducationalBooks";
+import HealthEbooks from "./pages/stream&download/ebooks/HealthEbooks";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -43,6 +44,7 @@ root.render(
                     <Route path="spiritual" element={<SpiritualBooks />} />
                     <Route path="cooking" element={<CookBooks />} />
                     <Route path="educational" element={<EducationalBooks />} />
+                    <Route path="health" element={<HealthEbooks />} />
                 </Route>
                 {/* <Route path="/cookbooks" element={<CookBooks />} /> */}
                 <Route path="/songs" element={<Songs />} />

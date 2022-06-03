@@ -48,8 +48,6 @@ const Download = () => {
                 // This can be downloaded directly:
                 const xhr = new XMLHttpRequest();
                 xhr.responseType = "blob";
-                xhr.open("GET", url, true);
-                xhr.send();
 
                 // on progress
                 xhr.onprogress = (e) => {
@@ -58,24 +56,32 @@ const Download = () => {
                 };
 
                 // on complete
-                xhr.onload = (e) => {
-                    const blob = xhr.response;
-                    fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
-                    // hide the toast after donwload is complete
-                    setTimeout(() => {
-                        toast.hide();
-                    }, 2000);
+                // xhr.onload = (e) => {
+                //     const blob = xhr.response;
+                //     fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
 
-                    // const file_url = document.createObjectURL(this.response);
-                    // const link = document.createElement("a");
-                    // link.href = file_url;
-                    // link.setAttribute(
-                    //     "download",
-                    //     `${title}.${this.type.split("/")[1]}`
-                    // );
-                    // document.body.appendChild(link);
-                    // link.click();
+                //     // hide the toast after donwload is complete
+                //     setTimeout(() => {
+                //         toast.hide();
+                //     }, 2000);
+                // };
+
+                xhr.onreadystatechange = (e) => {
+                    if (this.readyState === 4 && this.status === 200) {
+                        const file_url = document.createObjectURL(
+                            this.response
+                        );
+                        const link = document.createElement("a");
+                        link.href = file_url;
+                        link.download = `${title}.${this.type.split("/")[1]}`;
+
+                        document.body.appendChild(link);
+                        link.click();
+                    }
                 };
+
+                xhr.open("GET", url, true);
+                xhr.send();
             })
             .catch((error) => {
                 console.log(error.message);

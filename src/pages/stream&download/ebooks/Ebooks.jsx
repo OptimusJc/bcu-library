@@ -3,11 +3,6 @@ import { NavLink, Outlet } from "react-router-dom";
 // styles imports
 import styles from "./ebooks.module.css";
 
-// component imports
-import CookBooks from "./CookBooks";
-import EducationalBooks from "./EducationalBooks";
-import SpiritualBooks from "./SpiritualBooks";
-
 const Ebooks = () => {
     return (
         <>
@@ -22,24 +17,23 @@ const Ebooks = () => {
                                 Find an assortment of books from our different
                                 catalogs
                             </p>
-                            <ul
-                                className={[
-                                    "nav nav-tabs",
-                                    styles.nav_tabs,
-                                ].join(" ")}
-                            >
+                            <ul className={["nav", styles.nav_tabs].join(" ")}>
                                 <li className="nav-item">
                                     <NavLink
                                         className="nav-link active"
                                         aria-current="page"
                                         to="spiritual"
                                     >
-                                        Spiritual
+                                        <span className="badge rounded-pill bg-primary">
+                                            Spiritual
+                                        </span>
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="cooking">
-                                        Cooking
+                                        <span className="badge rounded-pill bg-secondary">
+                                            Cooking
+                                        </span>
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
@@ -47,7 +41,16 @@ const Ebooks = () => {
                                         className="nav-link"
                                         to="educational"
                                     >
-                                        Educational
+                                        <span className="badge rounded-pill bg-success">
+                                            Education
+                                        </span>
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="health">
+                                        <span className="badge rounded-pill bg-danger">
+                                            Health
+                                        </span>
                                     </NavLink>
                                 </li>
                             </ul>
