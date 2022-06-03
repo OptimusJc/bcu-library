@@ -37,7 +37,6 @@ const Download = () => {
 
     const download = () => {
         const httpReference = ref(fireStorage, title_url);
-        console.log(httpReference);
 
         // the toast
         const toastToShow = document.getElementById("liveToast");
@@ -66,6 +65,17 @@ const Download = () => {
                     setTimeout(() => {
                         toast.hide();
                     }, 2000);
+
+                    // const file_url = document.createObjectURL(this.response);
+
+                    // const link = document.createElement("a");
+                    // link.href = file_url;
+                    // link.setAttribute(
+                    //     "download",
+                    //     `${title}.${this.type.split("/")[1]}`
+                    // );
+                    // document.body.appendChild(link);
+                    // link.click();
                 };
             })
             .catch((error) => {

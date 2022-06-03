@@ -43,7 +43,7 @@ const Footer = () => {
                     <ul>
                         <li>Resources</li>
                         <li>
-                            <Link to="/ebooks">Ebooks</Link>
+                            <Link to="/ebooks/spiritual">Ebooks</Link>
                         </li>
                         <li>
                             <Link to="/series">Collections</Link>
