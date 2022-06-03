@@ -14,16 +14,16 @@ const UploadForm = () => {
         // console.log(selected);
 
         // * file types
-        const types = ["audio/mpeg", "audio/mp3", "video/mp4", "video/mpeg"];
-        // const types = ["application/pdf", "application/epub+zip"];
+        // const types = ["audio/mpeg", "audio/mp3", "video/mp4", "video/mpeg"];
+        const types = ["application/pdf", "application/epub+zip"];
 
         if (selected && types.includes(selected.type)) {
             setFile(selected);
             setError("");
         } else {
             setFile(null);
-            setError("Please select an audio or video file");
-            // setError("Please select a pdf or epub file");
+            // setError("Please select an audio or video file");
+            setError("Please select a pdf or epub file");
         }
     };
     // * [end]
