@@ -53,6 +53,13 @@ const Ebooks = () => {
                                         </span>
                                     </NavLink>
                                 </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="children">
+                                        <span className="badge rounded-pill bg-info">
+                                            Children
+                                        </span>
+                                    </NavLink>
+                                </li>
                             </ul>
 
                             <div

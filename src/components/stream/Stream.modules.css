@@ -33,6 +33,7 @@
 .stream_download ul li img {
     width: 25px;
     height: 25px;
+    filter: invert(1) sepia(0) saturate(20) hue-rotate(277.2deg) brightness(1);
 }
 
 .stream_download ul {

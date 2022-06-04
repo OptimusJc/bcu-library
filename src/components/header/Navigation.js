@@ -6,8 +6,14 @@ import ebook from "../../assets/images/stream&download/ebook_icon_light.svg";
 import music from "../../assets/images/stream&download/music_icon_light.svg";
 import podcast from "../../assets/images/stream&download/podcast_icon_light.svg";
 import series from "../../assets/images/stream&download/series_icon_light.svg";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Navigation() {
+    let activeStyle = {
+        color: "hsl(314, 70%, 50%)",
+    };
+
     return (
         <div className={classes.backgroundColor}>
             <header>
@@ -26,12 +32,14 @@ function Navigation() {
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar"
                             aria-controls="offcanvasNavbar"
-                            className={[
-                                "navbar-toggler",
-                                classes.navbar_toggler,
-                            ].join(" ")}
+                            className={[classes.navbar_toggler].join(" ")}
                         >
-                            <span className="navbar-toggler-icon"></span>
+                            <HiMenuAlt3
+                                className={[
+                                    "navbar-toggler-icon",
+                                    classes.navbar_toggler_icon,
+                                ].join(" ")}
+                            />
                         </button>
                         <div
                             className={[
@@ -50,13 +58,17 @@ function Navigation() {
                                 </div>
                                 <button
                                     type="button"
-                                    className="btn-close text-reset"
+                                    className={[
+                                        "text-reset",
+                                        classes.navbar_toggler_close,
+                                    ].join(" ")}
                                     data-bs-dismiss="offcanvas"
                                     aria-label="Close"
-                                    style={{
-                                        marginInlineEnd: "calc(1rem / 16)",
-                                    }}
-                                ></button>
+                                >
+                                    <IoCloseSharp
+                                        className={classes.btn_close}
+                                    />
+                                </button>
                             </div>
                             <div
                                 className={[
@@ -70,6 +82,11 @@ function Navigation() {
                                             to="/"
                                             className="nav-link active"
                                             aria-current="page"
+                                            style={({ isActive }) => {
+                                                return isActive
+                                                    ? activeStyle
+                                                    : undefined;
+                                            }}
                                         >
                                             Home
                                         </NavLink>
@@ -78,6 +95,11 @@ function Navigation() {
                                         <NavLink
                                             to="/news-and-magazines"
                                             className="nav-link"
+                                            style={({ isActive }) => {
+                                                return isActive
+                                                    ? activeStyle
+                                                    : undefined;
+                                            }}
                                         >
                                             News & Magazines
                                         </NavLink>
@@ -86,6 +108,11 @@ function Navigation() {
                                         <NavLink
                                             to="/kids-and-teens"
                                             className="nav-link"
+                                            style={({ isActive }) => {
+                                                return isActive
+                                                    ? activeStyle
+                                                    : undefined;
+                                            }}
                                         >
                                             Kids & Teens
                                         </NavLink>
@@ -115,6 +142,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/ebooks/spiritual"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     <img
                                                         className={classes.icon}
@@ -128,6 +160,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/songs"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     <img
                                                         className={classes.icon}
@@ -141,6 +178,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/podcasts"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     <img
                                                         className={classes.icon}
@@ -154,6 +196,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/series"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     <img
                                                         className={classes.icon}
@@ -188,6 +235,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/stream-and-download/ebooks"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     Web Interviews
                                                 </NavLink>
@@ -196,6 +248,11 @@ function Navigation() {
                                                 <NavLink
                                                     to="/stream-and-download/ebooks"
                                                     className="dropdown-item"
+                                                    style={({ isActive }) => {
+                                                        return isActive
+                                                            ? activeStyle
+                                                            : undefined;
+                                                    }}
                                                 >
                                                     Commentaries
                                                 </NavLink>
@@ -209,6 +266,11 @@ function Navigation() {
                                         <NavLink
                                             to="/contact"
                                             className="nav-link"
+                                            style={({ isActive }) => {
+                                                return isActive
+                                                    ? activeStyle
+                                                    : undefined;
+                                            }}
                                         >
                                             Contact Us
                                         </NavLink>
@@ -217,6 +279,11 @@ function Navigation() {
                                         <NavLink
                                             to="/support"
                                             className="nav-link"
+                                            style={({ isActive }) => {
+                                                return isActive
+                                                    ? activeStyle
+                                                    : undefined;
+                                            }}
                                         >
                                             Support Library
                                         </NavLink>

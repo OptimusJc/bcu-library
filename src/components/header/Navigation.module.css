@@ -7,50 +7,39 @@
 }
 
 header {
-    height: 90px;
+    height: 80px;
 }
 header .navbar_brand img {
-    width: 120px;
+    width: 110px;
     margin-left: -1rem;
 }
 
 /* navbar toggler icon  */
-header .navbar_toggler {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.navbar_toggler {
+    padding: none;
+    background: none;
     border: none;
-    background-color: var(--purple-shade-1);
-    box-shadow: -3px -3px 9px var(--purple-shade-2);
-    box-shadow: 3px 3px 9px var(--purple-shade-4);
-}
-.navbar_toggler:focus {
-    box-shadow: 0 0 15px 0rem;
 }
 
-header .navbar_toggler span,
-header .navbar_toggler span:before,
-header .navbar_toggler span:after {
-    background-color: var(--purple-shade-4);
-    border-radius: 4px;
-    height: 4px;
-    width: 25px;
+.navbar_toggler:focus {
+    box-shadow: none;
 }
-header .navbar_toggler span {
-    position: relative;
+
+.navbar_toggler .navbar_toggler_icon {
+    width: 35px;
+    height: 35px;
+    color: var(--purple-shade-1);
 }
-header .navbar_toggler span:before,
-header .navbar_toggler span:after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    width: inherit;
+
+.navbar_toggler_close {
+    background: none;
+    outline: none;
+    border: none;
 }
-header .navbar_toggler span:before {
-    top: -8px;
-}
-header .navbar_toggler span:after {
-    bottom: -8px;
+.navbar_toggler_close .btn_close {
+    width: 35px;
+    height: 35px;
+    color: var(--purple-shade-1);
 }
 
 .offcanvas_body {
@@ -72,6 +61,7 @@ header .navbar_toggler span:after {
     border: none;
     padding: 0;
 }
+
 .dropdown_menu_container li {
     width: 200px;
     outline: 2px solid var(--purple-shade-3);
@@ -94,6 +84,7 @@ header .navbar_toggler span:after {
 
 .dropdown_menu_container li a:hover {
     background-color: var(--purple-shade-1);
+    color: var(--purple-shade-2);
 }
 .dropdown_menu_container li a:hover .icon {
     filter: invert(0.3) sepia(1) saturate(20) hue-rotate(277.2deg) brightness(1);
