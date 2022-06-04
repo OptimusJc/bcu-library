@@ -7,7 +7,6 @@ const Featured = () => {
     // * Get docs array from useFirestore
     const [podcast_data] = useData();
 
-    console.log(podcast_data);
     return (
         <div className="featured">
             <h3>Featured</h3>
@@ -15,13 +14,14 @@ const Featured = () => {
                 {podcast_data &&
                     podcast_data.map((doc) => {
                         const date = doc.createdAt.toDate().toDateString();
+                        const doc_title = doc.title.split("others")[1];
                         return (
                             <Feature
                                 key={doc.id}
                                 doc_id={doc.id}
                                 path={doc.url}
-                                author={doc.title.split(".")[0]}
-                                title={doc.title}
+                                author={doc_title.split(".")[0]}
+                                title={doc_title}
                                 date={date}
                             />
                         );

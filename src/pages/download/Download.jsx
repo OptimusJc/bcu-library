@@ -8,16 +8,19 @@ import { fireStorage } from "../../firebase";
 import { ref, getDownloadURL } from "firebase/storage";
 import { useState } from "react";
 import { Toast } from "bootstrap";
+import FileDownload from "js-file-download";
 
 const Download = () => {
     let { id } = useParams();
     const location = useLocation();
-    const fileDownload = require("js-file-download");
+    // const fileDownload = require("js-file-download");
 
     // states
     let [progress, setProgress] = useState(0);
 
-    const title = location.state.document_title.title.split(".")[0];
+    const title = location.state.document_title.title
+        .split(".")[0]
+        .split("others");
     const from = location.state.from;
     let title_url;
 
@@ -56,28 +59,14 @@ const Download = () => {
                 };
 
                 // on complete
-                // xhr.onload = (e) => {
-                //     const blob = xhr.response;
-                //     fileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
+                xhr.onload = (e) => {
+                    const blob = xhr.response;
+                    FileDownload(blob, `${title}.${blob.type.split("/")[1]}`);
 
-                //     // hide the toast after donwload is complete
-                //     setTimeout(() => {
-                //         toast.hide();
-                //     }, 2000);
-                // };
-
-                xhr.onreadystatechange = (e) => {
-                    if (this.readyState === 4 && this.status === 200) {
-                        const file_url = document.createObjectURL(
-                            this.response
-                        );
-                        const link = document.createElement("a");
-                        link.href = file_url;
-                        link.download = `${title}.${this.type.split("/")[1]}`;
-
-                        document.body.appendChild(link);
-                        link.click();
-                    }
+                    // hide the toast after donwload is complete
+                    setTimeout(() => {
+                        toast.hide();
+                    }, 2000);
                 };
 
                 xhr.open("GET", url, true);

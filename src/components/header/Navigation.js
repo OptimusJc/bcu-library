@@ -113,7 +113,7 @@ function Navigation() {
                                         >
                                             <li>
                                                 <Link
-                                                    to="/ebooks"
+                                                    to="/ebooks/spiritual"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={ebook} alt="" />

@@ -21,6 +21,7 @@ const OtherTitles = () => {
                         // store states to be used by useLocation in the
                         // download component
                         const { title, url } = doc;
+                        const doc_title = title.split("others")[1];
 
                         return (
                             <Link
@@ -35,7 +36,7 @@ const OtherTitles = () => {
                             >
                                 <Cards
                                     custom_style="other_section_card"
-                                    title={doc.title.split(".")[0]}
+                                    title={doc_title.split(".")[0]}
                                 />
                             </Link>
                         );
