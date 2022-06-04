@@ -13,11 +13,11 @@ const useStorage = (files) => {
             // references
             const storageRef = ref(
                 fireStorage,
-                `ebooks/health_ebooks/${files.name}`
+                `ebooks/children_ebooks/fiction/${files.name}`
             );
             const collectionRef = collection(
                 fireStore,
-                `ebooks/health_ebook/health_ebooks`
+                `ebooks/children_ebook/fiction`
             );
 
             const uploadTask = uploadBytesResumable(storageRef, files);

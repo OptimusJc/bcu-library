@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./Navigation.module.css";
 import logo from "../../assets/images/bcu_logo.png";
 
@@ -17,9 +17,9 @@ function Navigation() {
                             " "
                         )}
                     >
-                        <Link to="/" className={classes.navbar_brand}>
+                        <NavLink to="/" className={classes.navbar_brand}>
                             <img src={logo} alt="bcu logo" />
-                        </Link>
+                        </NavLink>
 
                         <button
                             type="button"
@@ -66,34 +66,34 @@ function Navigation() {
                             >
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item">
-                                        <Link
+                                        <NavLink
                                             to="/"
                                             className="nav-link active"
                                             aria-current="page"
                                         >
                                             Home
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link
+                                        <NavLink
                                             to="/news-and-magazines"
                                             className="nav-link"
                                         >
                                             News & Magazines
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link
+                                        <NavLink
                                             to="/kids-and-teens"
                                             className="nav-link"
                                         >
                                             Kids & Teens
-                                        </Link>
+                                        </NavLink>
                                     </li>
 
                                     {/* stream and download link  */}
                                     <li className="nav-item dropdown">
-                                        <Link
+                                        <NavLink
                                             className="nav-link 
                                     dropdown-toggle"
                                             to="#"
@@ -103,7 +103,7 @@ function Navigation() {
                                             aria-expanded="false"
                                         >
                                             Stream & Download
-                                        </Link>
+                                        </NavLink>
                                         <ul
                                             className={[
                                                 "dropdown-menu",
@@ -112,46 +112,46 @@ function Navigation() {
                                             aria-labelledby="offcanvasNavbarDropdown"
                                         >
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/ebooks/spiritual"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={ebook} alt="" />
                                                     Ebooks
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/songs"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={music} alt="" />
                                                     Songs
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/podcasts"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={podcast} alt="" />
                                                     Podcasts
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/series"
                                                     className="dropdown-item"
                                                 >
                                                     <img src={series} alt="" />
                                                     Series
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li className="nav-item dropdown">
-                                        <Link
+                                        <NavLink
                                             to="#"
                                             className="nav-link dropdown-toggle"
                                             id="offcanvasNavbarDropdown"
@@ -160,7 +160,7 @@ function Navigation() {
                                             aria-expanded="false"
                                         >
                                             Cool Stuff
-                                        </Link>
+                                        </NavLink>
                                         <ul
                                             className={[
                                                 "dropdown-menu",
@@ -169,20 +169,20 @@ function Navigation() {
                                             aria-labelledby="offcanvasNavbarDropdown"
                                         >
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/stream-and-download/ebooks"
                                                     className="dropdown-item"
                                                 >
                                                     Web Interviews
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/stream-and-download/ebooks"
                                                     className="dropdown-item"
                                                 >
                                                     Commentaries
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -190,20 +190,20 @@ function Navigation() {
 
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <Link
+                                        <NavLink
                                             to="/contact"
                                             className="nav-link"
                                         >
                                             Contact Us
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link
+                                        <NavLink
                                             to="/support"
                                             className="nav-link"
                                         >
                                             Support Library
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>

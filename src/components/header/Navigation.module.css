@@ -78,7 +78,7 @@ header .navbar_toggler span:after {
 .dropdown_menu_container li {
     margin-block-end: calc(15rem / 16);
 }
-.dropdown_menu_container li:hover {
+.dropdown_menu_container li a:hover {
     background-color: var(--purple-shade-1);
 }
 

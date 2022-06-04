@@ -28,7 +28,7 @@ const Contact = () => {
                             <form>
                                 <div className="mb-3">
                                     <label
-                                        for="userName"
+                                        htmlFor="userName"
                                         className="form-label"
                                     >
                                         Name
@@ -42,7 +42,7 @@ const Contact = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label
-                                        for="userEmail"
+                                        htmlFor="userEmail"
                                         className="form-label"
                                     >
                                         Email
@@ -55,7 +55,10 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="subject" className="form-label">
+                                    <label
+                                        htmlFor="subject"
+                                        className="form-label"
+                                    >
                                         Subject
                                     </label>
                                     <Input
@@ -67,7 +70,7 @@ const Contact = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label
-                                        for="userMessage"
+                                        htmlFor="userMessage"
                                         className="form-label"
                                     >
                                         Message
