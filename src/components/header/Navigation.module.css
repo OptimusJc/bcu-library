@@ -52,6 +52,10 @@ header .navbar_brand img {
     color: var(--white);
     font-size: 1rem;
 }
+.offcanvas_body li a:hover {
+    color: hsl(314, 70%, 50%);
+}
+
 .offcanvas_body .nav-item .nav-link:active {
     color: var(--purple-shade-2);
 }
@@ -79,15 +83,20 @@ header .navbar_brand img {
     width: 25px;
     height: 25px;
     margin-inline-end: 1rem;
-    filter: invert(0.3) sepia(1) saturate(8) hue-rotate(252.4deg) brightness(1);
+    filter: invert(0.3) sepia(1) saturate(61) hue-rotate(263deg) brightness(0.4);
+}
+
+.dropdown_menu_container li a:visited {
+    background-color: hsl(264, 80%, 75%);
 }
 
 .dropdown_menu_container li a:hover {
     background-color: var(--purple-shade-1);
-    color: var(--purple-shade-2);
+    color: hsl(314, 70%, 50%);
 }
+
 .dropdown_menu_container li a:hover .icon {
-    filter: invert(0.3) sepia(1) saturate(20) hue-rotate(277.2deg) brightness(1);
+    filter: invert(0.3) sepia(1) saturate(50) hue-rotate(314deg) brightness(1);
 }
 
 @media (min-width: 48em) {
@@ -97,12 +106,6 @@ header .navbar_brand img {
 
     header .navbar_brand img {
         width: 110px;
-    }
-
-    header .navbar_toggler span,
-    header .navbar_toggler span:before,
-    header .navbar_toggler span:after {
-        border-radius: 3px;
     }
 }
 
