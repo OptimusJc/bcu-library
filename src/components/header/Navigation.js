@@ -116,7 +116,11 @@ function Navigation() {
                                                     to="/ebooks/spiritual"
                                                     className="dropdown-item"
                                                 >
-                                                    <img src={ebook} alt="" />
+                                                    <img
+                                                        className={classes.icon}
+                                                        src={ebook}
+                                                        alt=""
+                                                    />
                                                     Ebooks
                                                 </NavLink>
                                             </li>
@@ -125,7 +129,11 @@ function Navigation() {
                                                     to="/songs"
                                                     className="dropdown-item"
                                                 >
-                                                    <img src={music} alt="" />
+                                                    <img
+                                                        className={classes.icon}
+                                                        src={music}
+                                                        alt=""
+                                                    />
                                                     Songs
                                                 </NavLink>
                                             </li>
@@ -134,7 +142,11 @@ function Navigation() {
                                                     to="/podcasts"
                                                     className="dropdown-item"
                                                 >
-                                                    <img src={podcast} alt="" />
+                                                    <img
+                                                        className={classes.icon}
+                                                        src={podcast}
+                                                        alt=""
+                                                    />
                                                     Podcasts
                                                 </NavLink>
                                             </li>
@@ -143,7 +155,11 @@ function Navigation() {
                                                     to="/series"
                                                     className="dropdown-item"
                                                 >
-                                                    <img src={series} alt="" />
+                                                    <img
+                                                        className={classes.icon}
+                                                        src={series}
+                                                        alt=""
+                                                    />
                                                     Series
                                                 </NavLink>
                                             </li>
