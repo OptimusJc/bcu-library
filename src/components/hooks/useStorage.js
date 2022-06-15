@@ -13,11 +13,11 @@ const useStorage = (files) => {
             // references
             const storageRef = ref(
                 fireStorage,
-                `ebooks/children_ebooks/fiction/${files.name}`
+                `podcasts/others/${files.name}`
             );
             const collectionRef = collection(
                 fireStore,
-                `ebooks/children_ebook/fiction`
+                `podcasts/others/other_podcasts`
             );
 
             const uploadTask = uploadBytesResumable(storageRef, files);
@@ -31,8 +31,9 @@ const useStorage = (files) => {
                 (snapshot) => {
                     // Observe state change events such as progress, pause, and resume
                     // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-                    const progress =
-                        (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    const progress = Math.round(
+                        (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                    );
                     setProgress(progress);
                 },
                 (error) => {

@@ -5,24 +5,23 @@ import Cards from "../card/Cards";
 // core import
 import { Link } from "react-router-dom";
 
-// hooks for getting data
-import useData from "../hooks/useData";
+import useFirestore from "../hooks/useFirestore";
+import ErrorBoundary from "../error/ErrorBoundary";
 
 const OtherTitles = () => {
     // get data
-    const [podcast_data] = useData();
+    const other_podcasts_data = useFirestore("podcasts/others/other_podcasts");
 
     return (
         <section className="other-section container">
             <h3>Explore other messages</h3>
             <div className="feature-container">
-                {podcast_data &&
-                    podcast_data.map((doc) => {
+                {/* <ErrorBoundary> */}
+                {other_podcasts_data &&
+                    other_podcasts_data.map((doc) => {
                         // store states to be used by useLocation in the
                         // download component
                         const { title, url } = doc;
-                        const doc_title = title.split("others")[1];
-
                         return (
                             <Link
                                 to={`/download/${doc.id}`}
@@ -36,11 +35,12 @@ const OtherTitles = () => {
                             >
                                 <Cards
                                     custom_style="other_section_card"
-                                    title={doc_title.split(".")[0]}
+                                    title={title.split(".")[0]}
                                 />
                             </Link>
                         );
                     })}
+                {/* </ErrorBoundary> */};
             </div>
         </section>
     );

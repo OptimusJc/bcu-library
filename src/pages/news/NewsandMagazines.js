@@ -2,7 +2,7 @@ function NewsandMagazines() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col" style={{ height: "500px" }}>
+                <div className="col" style={{ height: "60vh" }}>
                     <p className="display-4">
                         Welcome to the News & Magazines sections of the library.
                     </p>

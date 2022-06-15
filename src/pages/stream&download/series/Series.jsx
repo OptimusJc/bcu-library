@@ -2,7 +2,7 @@ const Series = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col" style={{ height: "500px" }}>
+                <div className="col" style={{ height: "60vh" }}>
                     <div>
                         <p className="display-4">this is the series page</p>
                     </div>

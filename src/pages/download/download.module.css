@@ -90,4 +90,7 @@
     .row .col div:first-child h3 {
         max-width: 450px;
     }
+    .row {
+        height: 70vh;
+    }
 }

@@ -1,27 +1,27 @@
-import Feature from "./Feature";
 import "./Feature.modules.css";
+import Feature from "./Feature";
 
-import useData from "../../hooks/useData";
+import useFirestore from "../../hooks/useFirestore";
 
 const Featured = () => {
     // * Get docs array from useFirestore
-    const [podcast_data] = useData();
+    const featured_data = useFirestore("podcasts/others/other_podcasts");
 
     return (
         <div className="featured">
             <h3>Featured</h3>
             <div className="featured-container">
-                {podcast_data &&
-                    podcast_data.map((doc) => {
+                {featured_data &&
+                    featured_data.map((doc) => {
                         const date = doc.createdAt.toDate().toDateString();
-                        const doc_title = doc.title.split("others")[1];
+                        const title = doc.title;
                         return (
                             <Feature
                                 key={doc.id}
                                 doc_id={doc.id}
                                 path={doc.url}
-                                author={doc_title.split(".")[0]}
-                                title={doc_title}
+                                author={title.split(".")[0]}
+                                title={title}
                                 date={date}
                             />
                         );
