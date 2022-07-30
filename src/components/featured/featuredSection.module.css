@@ -8,8 +8,7 @@
 @media (min-width: 64em) {
     .featured_section {
         margin-block: 2rem;
-        display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 

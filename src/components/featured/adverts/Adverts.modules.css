@@ -13,7 +13,8 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     padding-block: 0.8rem;
-    /* padding-inline: 1rem; */
+    color: var(--color-2);
+
 }
 
 .carousel-item img {
@@ -23,7 +24,7 @@
 
 .carousel_caption h5,
 .carousel_caption p {
-    color: var(--purple-shade-1);
+    color: var(--white);
 }
 
 @media (min-width: 48em) {
@@ -32,5 +33,11 @@
         height: 350px;
         margin-inline-start: 0;
         margin-inline-end: 1rem;
+    }
+}
+
+@media (min-width: 80em) {
+    .advert {
+        width: 600px;
     }
 }
