@@ -19,7 +19,7 @@
     min-width: 280px;
     margin-inline-start: 3rem;
     margin-block-start: -10rem;
-    background-color: var(--purple-shade-3);
+    background-color: var(--color-4);
     padding-inline: calc(14rem / 16);
     color: var(--purple-shade-1);
     padding-block-end: 1rem;
@@ -31,12 +31,12 @@
 .personality-section .person_bio h3 {
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-block: 1rem;
-    color: var(--white);
+    color: var(--color-1);
 }
 .personality-section .person_bio h4 {
-    color: var(--white);
+    color: var(--color-3);
     text-transform: uppercase;
     font-weight: 500;
     margin-block-end: 1rem;
@@ -45,11 +45,13 @@
 .personality-section .person_bio p {
     line-height: 1rem;
     margin-block-end: 2rem;
+    color: var(--color-2);
 }
 
 .personality-section .read-more {
-    background-color: var(--purple-shade-1);
+    background-color: var(--color-2);
     border: none;
+    color: var(--color-5);
 }
 
 @media (min-width: 48em) {
