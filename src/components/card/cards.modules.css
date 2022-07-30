@@ -10,6 +10,7 @@
 .card img,
 .card .card-body {
     border: none;
+    min-height: 150px;
 }
 
 .card .card-body .card-title {
