@@ -120,7 +120,7 @@ header .offcanvas_body li a {
     }
 
     header {
-        padding-inline: calc(20rem / 16) 1rem;
+        /* padding-inline: calc(20rem / 16) 1rem; */
         max-width: 80rem;
         margin: auto;
     }
