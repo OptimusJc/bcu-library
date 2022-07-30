@@ -1,5 +1,5 @@
 .stream_download {
-    background-color: var(--purple-shade-1);
+    background-color: var(--color-5);
     padding-block: 3rem;
 }
 
@@ -7,9 +7,10 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     padding-block-end: 1rem;
+    color: var(--color-3);
 }
 .stream_download p {
-    color: var(--purple-shade-2);
+    color: var(--color-2);
 }
 
 .stream_download h3,
@@ -22,8 +23,8 @@
     height: 70px;
     border-radius: 50%;
     box-shadow: -4px -4px 12px hsl(0, 100%, 98%),
-        4px 6px 12px hsla(263, 61%, 40%, 1);
-    background-color: var(--purple-shade-3);
+        4px 6px 12px var(--color-3);
+    background-color: var(--color-2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +49,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--color-2);
 }
 
 .animate_link {
@@ -64,10 +66,29 @@
     .stream_download ul {
         display: flex;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-block-end: 0;
     }
 
-    .stream_download ul li {
-        margin-inline: 2rem;
+    .stream_download ul div {
+        margin-block-end: 1.5rem;
+    }
+
+    .stream_download ul li:not(:last-child) {
+        margin-block-end: 0;
+    }
+}
+
+@media (min-width: 64em) {
+    .stream_download {
+        padding-block: 5rem;
+    }
+
+    .stream_download ul {
+        margin-block-start: 3rem;
+    }
+
+    .stream_download ul div {
+        margin-block-end: 1rem;
     }
 }
