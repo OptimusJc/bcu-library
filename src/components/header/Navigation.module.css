@@ -1,8 +1,9 @@
 .backgroundColor {
     background-image: linear-gradient(
         to right,
-        var(--purple-shade-4),
-        var(--purple-shade-3)
+        var(--color-3),
+        var(--color-1),
+        var(--color-2)
     );
 }
 
@@ -10,7 +11,7 @@ header {
     height: 80px;
 }
 header .navbar_brand img {
-    width: 110px;
+    width: 120px;
     margin-left: -1rem;
 }
 
@@ -28,7 +29,7 @@ header .navbar_brand img {
 .navbar_toggler .navbar_toggler_icon {
     width: 35px;
     height: 35px;
-    color: var(--purple-shade-1);
+    color: var(--color-4);
 }
 
 .navbar_toggler_close {
@@ -39,64 +40,68 @@ header .navbar_brand img {
 .navbar_toggler_close .btn_close {
     width: 35px;
     height: 35px;
-    color: var(--purple-shade-1);
+    color: var(--color-4);
 }
 
-.offcanvas_body {
+header .offcanvas_body {
     padding-inline-start: 1rem;
 }
-.offcanvas_body ul li {
+header .offcanvas_body ul li {
     margin-block-end: calc(10rem / 16);
 }
-.offcanvas_body li a {
+header .offcanvas_body li a {
     color: var(--white);
     font-size: 1rem;
 }
-.offcanvas_body li a:hover {
+/* .offcanvas_body li a:hover {
     color: hsl(314, 70%, 50%);
-}
+} */
 
-.offcanvas_body .nav-item .nav-link:active {
-    color: var(--purple-shade-2);
+.offcanvas_body li a:focus {
+    color: var(--color-4);
 }
 
 .dropdown_menu_container {
-    background: none;
+    background-image: linear-gradient(
+        to right,
+        var(--color-3),
+        var(--color-1),
+        var(--color-2)
+    );
     border: none;
     padding: 0;
 }
 
 .dropdown_menu_container li {
     width: 200px;
-    outline: 2px solid var(--purple-shade-3);
     border-radius: 1px;
-    background-color: var(--purple-shade-1);
 }
 
 .dropdown_menu_container li a {
     font-size: 0.9rem;
-    padding-block: 0.5rem;
-    color: var(--purple-shade-3);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--white);
 }
 
 .dropdown_menu_container li a .icon {
     width: 25px;
     height: 25px;
     margin-inline-end: 1rem;
-    filter: invert(0.3) sepia(1) saturate(61) hue-rotate(263deg) brightness(0.4);
+    filter: invert(84%) sepia(29%) saturate(542%) hue-rotate(359deg) brightness(95%) contrast(103%);
 }
 
 .dropdown_menu_container li a:visited {
-    background-color: hsl(264, 80%, 75%);
+    background-color: var(--color-2);
 }
 
 .dropdown_menu_container li a:hover {
-    background-color: var(--purple-shade-1);
-    color: hsl(314, 70%, 50%);
+    background: none;
+    color: var(--color-5);
 }
 
 .dropdown_menu_container li a:hover .icon {
-    filter: invert(0.3) sepia(1) saturate(50) hue-rotate(314deg) brightness(1);
+    filter: invert(91%) sepia(6%) saturate(6759%) hue-rotate(315deg) brightness(94%) contrast(85%);
 }
 
 @media (min-width: 48em) {
@@ -110,15 +115,12 @@ header .navbar_brand img {
 }
 
 @media (min-width: 64rem) {
-    .logo img {
-        width: 180px;
+    header .navbar_brand img {
+        width: 140px;
     }
 
     header {
-        padding: calc(20rem / 16) 1rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        padding-inline: calc(20rem / 16) 1rem;
         max-width: 80rem;
         margin: auto;
     }
@@ -136,27 +138,29 @@ header .navbar_brand img {
 
     header .offcanvas_body {
         display: flex;
-        margin-inline-start: 4rem;
-        justify-content: space-evenly;
-        font-size: 0.8rem;
+        /* margin-inline-start: 4rem; */
+        justify-content: space-between;
     }
 
     header .nav_container {
-        align-items: baseline !important;
+        align-items: baseline;
     }
 
-    .offcanvas_body li a {
-        font-size: 0.85rem;
+    header .offcanvas_body li a {
+        font-size: 0.95rem;
+    }
+    header .offcanvas_body li a:hover {
+        color: var(--color-5);
     }
 }
 
 @media (min-width: 80rem) {
     header .offcanvas_body {
         font-size: 0.9rem;
-        margin-inline-start: 6rem;
     }
 
-    .offcanvas_body li a {
-        font-size: 1rem;
+    header .dropdown_menu_container li a {
+        font-size: 0.85rem;
     }
+
 }
