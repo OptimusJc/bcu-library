@@ -11,7 +11,8 @@
 
  html {
     line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%; /* 2 */
   }
   
   /* Sections
@@ -360,8 +361,8 @@
     --color-1: #600B34;
     --color-2: #8C0869;
     --color-3: #2F0940;
-    --color-4: #DF9F5F;
-    --color-5: #F4D580;
+    --color-4: #EFB34C;
+    --color-5: #FDFEBA;
     --white: #f2f2f2;
 
     --font-family-sans-serif: "Lora",
