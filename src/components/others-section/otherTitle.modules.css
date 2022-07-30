@@ -1,18 +1,19 @@
 .other-section h3 {
     padding-block-start: 2rem;
     margin-block-start: 1rem;
+    color: var(--color-3);
 }
 
 .other-section .card-body {
-    background-color: var(--purple-shade-4);
+    background-color: var(--color-4);
 }
 
 .other-section .card-title {
-    color: var(--purple-shade-2);
+    color: var(--color-1);
     letter-spacing: 0.6px;
 }
 .other-section .card-text {
-    color: var(--purple-shade-1);
+    color: var(--color-2);
     text-transform: capitalize;
 }
 
@@ -38,9 +39,10 @@
     }
 
     .other-section .feature-container::-webkit-scrollbar-thumb {
-        background-color: var(--purple-shade-2);
+        background-color: var(--color-2);
         border-radius: 20px;
         border: 6px solid transparent;
+        -webkit-background-clip: content-box;
         background-clip: content-box;
     }
 }
