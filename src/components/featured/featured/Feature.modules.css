@@ -101,6 +101,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 1rem;
     }
     .featured-container {
         height: 240px;
