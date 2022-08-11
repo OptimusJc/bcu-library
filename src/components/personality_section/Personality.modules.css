@@ -48,10 +48,14 @@
     color: var(--color-2);
 }
 
-.personality-section .read-more {
+.personality-section a.read_more {
     background-color: var(--color-2);
     border: none;
     color: var(--color-5);
+    padding: 0.9rem 2rem;
+    font-size: calc(15rem / 16);
+    border-radius: 3px;
+    outline: none;
 }
 
 @media (min-width: 48em) {

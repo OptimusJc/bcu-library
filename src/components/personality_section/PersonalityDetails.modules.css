@@ -1,0 +1,59 @@
+
+.personality h3 {
+    color: var(--color-2);
+}
+
+.personality h5 {
+    color: var(--color-1);  
+}
+
+.personality .personality-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.personality-body .personality-image,
+.personality-body .personality-text {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 48em) {
+    .personality {
+        min-height: 70vh;
+    }
+
+    .personality-body {
+        margin-top: 3rem;
+    }
+
+    .personality .personality-body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .personality-body .personality-image,
+    .personality-body .personality-text {
+        margin-bottom: 0;
+    }
+
+    .personality-body .personality-text {
+        width: 310px;
+    }
+
+}
+
+@media (min-width: 64em) {
+    .personality {
+        min-height: 100vh;
+    }
+
+    .personality .personality-body {
+        justify-content: space-evenly;
+    }
+    .personality-body .personality-image {
+        /* come and maybe add srcset images for desktop versions */
+    }
+    .personality-body .personality-text {
+        width: 450px;
+    }
+}
