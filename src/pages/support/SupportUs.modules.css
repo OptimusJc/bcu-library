@@ -223,4 +223,30 @@
 	.become_partner div h2 {
 		width: 500px;
 	}
+
+	/* * .covenant_partnership section  */
+	.covenant_partnership .row {
+	}
+
+	.covenant_partnership .col .image {
+		width: 650px;
+		height: 450px;
+		margin-left: 7rem;
+	}
+
+	.covenant_partnership .col .card {
+		padding: 1.8rem;
+		margin-left: -15rem;
+		width: 650px;
+		margin-top: 12rem;
+	}
+
+	.covenant_partnership .col .card .card-body ul li {
+		padding-block: 0.3rem;
+		font-size: 1rem;
+	}
+
+	.covenant_partnership .col .card .card-body h3 {
+		font-size: 1.6rem;
+	}
 }
