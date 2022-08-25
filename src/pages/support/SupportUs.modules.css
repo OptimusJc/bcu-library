@@ -23,6 +23,41 @@
     font-style: normal;
 }
 
+/* * supportus give section  */
+.supportus_give .col .card {
+    box-shadow: none;
+    width: 330px;
+}
+
+.supportus_give .col .card .card-body {
+    padding-inline: 0;
+}
+
+.supportus_give .col .card .card-body h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.supportus_give .col .card .card-body h4 {
+    font-size: 1.2rem;
+}
+
+.supportus_give .col .card .card-body p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.supportus_give .col .card .card-body .paragraph1 {
+    margin-bottom: 0.5rem;
+}
+
+.supportus_give .col .card .card-body button {
+    background-color: var(--color-2);
+    color: var(--color-5);
+}
+
+
 @media (min-width: 48em) {
     /* * supportus hero section */
     .supportus_hero_section .supportus_hero {

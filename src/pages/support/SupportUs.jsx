@@ -25,6 +25,38 @@ function SupportUs() {
 					</div>
 				</div>
 			</div>
+
+			<div className="supportus_give">
+				<div className="container">
+					<div className="row">
+						<div className="col">
+							{/* * make impact  */}
+							<div className="card">
+								<div className="card-body">
+									<h2 className="h2">Make an impact</h2>
+									<h4 className="h4">- Thank you</h4>
+									<p className="lead">
+										When you give your monthly gift or more, you are supporting
+										BCU International as a whole including both broadcast and
+										humanitarian aspects of the ministry
+									</p>
+									<p></p>
+								</div>
+							</div>
+
+							{/* * give button */}
+							<div className="card">
+								<div className="card-body">
+									<h4 className="h4">PAYPAL</h4>
+									<p className="paragraph1">Donate with paypal</p>
+									<p>R.R.C.B.N</p>
+									<button className="btn btn-primary">donate</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
