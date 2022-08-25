@@ -1,9 +1,11 @@
 import "./SupportUs.modules.css";
 
+import image1 from "../../assets/images/carousel/image6.jpeg";
+
 function SupportUs() {
 	return (
 		<div>
-			<div className="supportus_hero_section">
+			<section className="supportus_hero_section">
 				<div className="container">
 					<div className="row">
 						<div className="col">
@@ -24,9 +26,9 @@ function SupportUs() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div className="supportus_give">
+			<section className="supportus_give">
 				<div className="container">
 					<div className="row">
 						<div className="col">
@@ -56,9 +58,9 @@ function SupportUs() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div className="become_partner">
+			<section className="become_partner">
 				<div>
 					<h2 className="h2">why become a partner?</h2>
 					<p>
@@ -69,7 +71,51 @@ function SupportUs() {
 						of our lord Jesus Christ with his compassion and generosity
 					</p>
 				</div>
-			</div>
+			</section>
+
+			<section className="covenant_partnership">
+				<div className="contianer">
+					<div className="row">
+						<div className="col">
+							<div className="image">
+								<img src={image1} alt="" />
+							</div>
+
+							<div className="card">
+								<div className="card-body">
+									<h3 className="h3">
+										as a bcu covenant partner, you will recieve:
+									</h3>
+									<ul>
+										<li>
+											You will be prioritized as a partner to recieve first-hand
+											information on what God is doing through BCU
+										</li>
+										<li>
+											You will recieve weekly links to our powerful, dynamic and
+											life-changing bible study sessions that will transform
+											your life
+										</li>
+										<li>
+											You will be given an opportunity to expand throuh
+											advertising with us and take both your ministry and
+											business global with our international reach
+										</li>
+										<li>
+											As a covenant partner you will qualify to recieve
+											discounts on advertisments
+										</li>
+										<li>
+											You will also qualify as a covenant partner to recieve
+											discounts on all the BCU products and materials
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 }
