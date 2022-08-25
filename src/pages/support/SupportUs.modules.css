@@ -1,189 +1,226 @@
 /* * supportus hero section  */
 .supportus_hero_section {
-    background: url("../../assets/images/background_2.jpg") var(--color-5) top right/cover no-repeat;
+	background: url("../../assets/images/background_2.jpg") var(--color-5) top
+		right/cover no-repeat;
 }
 
 .supportus_hero_section,
 .supportus_hero_section .supportus_hero {
-    height: 400px;
+	height: 400px;
 }
 .supportus_hero_section .supportus_hero {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--white);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: var(--white);
 }
 
 .supportus_hero_section .supportus_hero .supportus_hero_title {
-    font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 .supportus_hero_section .supportus_hero .supportus_hero_title span {
-    color: var(--color-4);
-    text-decoration: none;
-    font-style: normal;
+	color: var(--color-4);
+	text-decoration: none;
+	font-style: normal;
 }
 
 /* * supportus give section  */
 .supportus_give .col .card {
-    box-shadow: none;
-    width: 330px;
+	box-shadow: none;
+	width: 330px;
 }
 
 .supportus_give .col .card.card_give {
-    background-color: var(--color-5-100);
+	background-color: var(--color-5-100);
 }
 
 .supportus_give .col .card .card-body {
-    padding-inline: 0.5rem;
+	padding-inline: 0.5rem;
 }
 
 .supportus_give .col .card .card-body h2 {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
 
 .supportus_give .col .card .card-body h4 {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .supportus_give .col .card .card-body p {
-    font-size: 1rem;
-    font-weight: normal;
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 .supportus_give .col .card .card-body .paragraph1 {
-    margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .supportus_give .col .card .card-body button {
-    background-color: var(--color-2);
-    color: var(--color-5);
+	background-color: var(--color-2);
+	color: var(--color-5);
 }
 
 /* * become_partner section */
 .become_partner {
-    background-color: var(--color-5);
+	background-color: var(--color-5);
 }
 
 .become_partner div {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	padding: 2.5rem 1rem;
 }
 
 .become_partner div h2 {
-    text-transform: uppercase;
-    /* letter-spacing: 0.025rem; */
+	text-transform: uppercase;
+	/* letter-spacing: 0.025rem; */
 }
 .become_partner div p span {
-    text-decoration: none;
-    color: var(--color-2);
-    text-transform: capitalize;
-    font-style: normal;
+	text-decoration: none;
+	color: var(--color-2);
+	text-transform: capitalize;
+	font-style: normal;
 }
 
 /* * covenant partnerships section  */
 .covenant_partnership {
-    margin-block: 2.5rem;
+	margin-block: 2.5rem;
 }
 
 /* ? removes the -bs-gutter-x margin  */
 .covenant_partnership .row {
-    margin-inline: 0;
+	margin-inline: 0;
 }
 
-.covenant_partnership .col .image{
-    height: 250px;
-    margin-inline: -0.7rem;
-    overflow: hidden;
+.covenant_partnership .col .image {
+	height: 250px;
+	margin-inline: -0.7rem;
+	overflow: hidden;
 }
 
 .covenant_partnership .col .image img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .covenant_partnership .col .card {
-    box-shadow: none;
-    width: 330px;
+	box-shadow: none;
+	width: 330px;
 }
 
 .covenant_partnership .col .card .card-body {
-    padding-inline: 0;
+	padding-inline: 0;
 }
 
 .covenant_partnership .col .card .card-body h3 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .covenant_partnership .col .card .card-body ul li {
-    list-style-type: square;
-    padding-block: 0.2rem;
+	list-style-type: square;
+	padding-block: 0.2rem;
 }
 
-
 @media (min-width: 48em) {
-    /* * supportus hero section */
-    .supportus_hero_section .supportus_hero {
-        width: 370px;
-    }
+	/* * supportus hero section */
+	.supportus_hero_section .supportus_hero {
+		width: 370px;
+	}
 
-    .supportus_hero_section .supportus_hero .supportus_hero_title {
-        font-size: 1.5rem;
-    }
+	.supportus_hero_section .supportus_hero .supportus_hero_title {
+		font-size: 1.5rem;
+	}
 
-    /* * supportus_give section  */
-    .supportus_give .col {
-        display: flex;
-        flex-direction: row;
-    }
+	/* * supportus_give section  */
+	.supportus_give .col {
+		display: flex;
+		flex-direction: row;
+	}
 
-    /* * become_partner */
-    .become_partner div {
-        /* width: 500px; */
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+	/* * become_partner */
+	.become_partner div {
+		/* width: 500px; */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .become_partner div p,
-    .become_partner div h2 {
-        width: 430px;
-    }
+	.become_partner div p,
+	.become_partner div h2 {
+		width: 430px;
+	}
 
+	/* * .covenant_partnership section */
+	.covenant_partnership .col {
+		display: flex;
+	}
+
+	.covenant_partnership .col .image {
+		width: 900px;
+		height: 400px;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.covenant_partnership .col .image img {
+		width: 100%;
+		height: 100%;
+		/* object-fit: fill; */
+	}
+
+	.covenant_partnership .row {
+		margin-inline: 1.5rem;
+	}
+
+	.covenant_partnership .col .card {
+		background-color: var(--color-4);
+		padding-inline: 1rem;
+		margin-left: -20rem;
+		width: 700px;
+		margin-top: 8rem;
+	}
+
+	.covenant_partnership .col .card .card-body ul li {
+		padding-block: 0.1rem;
+		font-size: 0.9rem;
+	}
+
+	.covenant_partnership .col .card .card-body h3 {
+		font-size: 1.5rem;
+	}
 }
 
 @media (min-width: 64em) {
-    /* * supportus hero section  */
-    .supportus_hero_section .supportus_hero {
-        width: 460px;
-    }
+	/* * supportus hero section  */
+	.supportus_hero_section .supportus_hero {
+		width: 460px;
+	}
 
-    .supportus_hero_section .supportus_hero .supportus_hero_title {
-        font-size: 1.8rem;
-    }
+	.supportus_hero_section .supportus_hero .supportus_hero_title {
+		font-size: 1.8rem;
+	}
 
-    /* * supportus_give section */
-    .supportus_give .col .card.card_give {
-        padding-inline: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+	/* * supportus_give section */
+	.supportus_give .col .card.card_give {
+		padding-inline: 1rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 
-    .supportus_give .col .card .card-body h2 {
-        font-size: 1.9rem;
-    }
+	.supportus_give .col .card .card-body h2 {
+		font-size: 1.9rem;
+	}
 
-    /* * .become_partner section */
-    .become_partner {
-        padding-block: 3rem;
-    }
+	/* * .become_partner section */
+	.become_partner {
+		padding-block: 3rem;
+	}
 
-    .become_partner div p,
-    .become_partner div h2 {
-        width: 500px;
-    }
-
+	.become_partner div p,
+	.become_partner div h2 {
+		width: 500px;
+	}
 }
