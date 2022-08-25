@@ -1,0 +1,28 @@
+/* * supportus hero section  */
+.supportus_hero_section {
+    background: url("../../assets/images/background_2.jpg") var(--color-5) top right/cover no-repeat;
+}
+
+.supportus_hero_section,
+.supportus_hero_section .supportus_hero {
+    height: 400px;
+}
+.supportus_hero_section .supportus_hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--white);
+}
+
+.supportus_hero_section .supportus_hero .supportus_hero_title {
+    font-size: 1.4rem;
+}
+.supportus_hero_section .supportus_hero .supportus_hero_title span {
+    color: var(--color-4);
+    text-decoration: none;
+    font-style: normal;
+}
+
+@media (min-width: 48em) {
+    
+}
