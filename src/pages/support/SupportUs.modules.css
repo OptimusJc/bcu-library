@@ -29,8 +29,12 @@
     width: 330px;
 }
 
+.supportus_give .col .card.card_give {
+    background-color: var(--color-5-100);
+}
+
 .supportus_give .col .card .card-body {
-    padding-inline: 0;
+    padding-inline: 0.5rem;
 }
 
 .supportus_give .col .card .card-body h2 {
@@ -67,6 +71,12 @@
     .supportus_hero_section .supportus_hero .supportus_hero_title {
         font-size: 1.5rem;
     }
+
+    /* * supportus_give section  */
+    .supportus_give .col {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 64em) {
@@ -77,6 +87,18 @@
 
     .supportus_hero_section .supportus_hero .supportus_hero_title {
         font-size: 1.8rem;
+    }
+
+    /* * supportus_give section */
+    .supportus_give .col .card.card_give {
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .supportus_give .col .card .card-body h2 {
+        font-size: 1.9rem;
     }
 
 }

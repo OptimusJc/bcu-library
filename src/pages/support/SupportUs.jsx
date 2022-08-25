@@ -45,7 +45,7 @@ function SupportUs() {
 							</div>
 
 							{/* * give button */}
-							<div className="card">
+							<div className="card card_give">
 								<div className="card-body">
 									<h4 className="h4">PAYPAL</h4>
 									<p className="paragraph1">Donate with paypal</p>
