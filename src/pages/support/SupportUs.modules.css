@@ -24,6 +24,7 @@
 }
 
 @media (min-width: 48em) {
+    /* * supportus hero section */
     .supportus_hero_section .supportus_hero {
         width: 370px;
     }
@@ -31,4 +32,16 @@
     .supportus_hero_section .supportus_hero .supportus_hero_title {
         font-size: 1.5rem;
     }
+}
+
+@media (min-width: 64em) {
+    /* * supportus hero section  */
+    .supportus_hero_section .supportus_hero {
+        width: 460px;
+    }
+
+    .supportus_hero_section .supportus_hero .supportus_hero_title {
+        font-size: 1.8rem;
+    }
+
 }
