@@ -61,6 +61,27 @@
     color: var(--color-5);
 }
 
+/* * become_partner section */
+.become_partner {
+    background-color: var(--color-5);
+}
+
+.become_partner div {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+}
+
+.become_partner div h2 {
+    text-transform: capitalize;
+}
+.become_partner div p span {
+    text-decoration: none;
+    color: var(--color-2);
+    text-transform: capitalize;
+    font-style: normal;
+}
+
 
 @media (min-width: 48em) {
     /* * supportus hero section */
@@ -77,6 +98,20 @@
         display: flex;
         flex-direction: row;
     }
+
+    /* * become_partner */
+    .become_partner div {
+        /* width: 500px; */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .become_partner div p,
+    .become_partner div h2 {
+        width: 430px;
+    }
+
 }
 
 @media (min-width: 64em) {
@@ -99,6 +134,16 @@
 
     .supportus_give .col .card .card-body h2 {
         font-size: 1.9rem;
+    }
+
+    /* * .become_partner section */
+    .become_partner {
+        padding-block: 3rem;
+    }
+
+    .become_partner div p,
+    .become_partner div h2 {
+        width: 500px;
     }
 
 }

@@ -57,6 +57,19 @@ function SupportUs() {
 					</div>
 				</div>
 			</div>
+
+			<div className="become_partner">
+				<div>
+					<h2 className="h2">why become a partner?</h2>
+					<p>
+						The{" "}
+						<span>body of christ united global international ministries</span>{" "}
+						partners have decided to commit themselves to the cause of BCU which
+						is to reach a generation to impact faith and hope telling the story
+						of our lord Jesus Christ with his compassion and generosity
+					</p>
+				</div>
+			</div>
 		</div>
 	);
 }
