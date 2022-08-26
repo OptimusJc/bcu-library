@@ -86,7 +86,7 @@
 
 /* * covenant partnerships section  */
 .covenant_partnership {
-	margin-block: 2.5rem;
+	margin-block: 2rem;
 }
 
 /* ? removes the -bs-gutter-x margin  */
@@ -105,23 +105,35 @@
 	height: auto;
 }
 
-.covenant_partnership .col .card {
+.covenant_partnership .col .card,
+.tasks_ahead .col .card {
 	box-shadow: none;
 	width: 330px;
+	margin-bottom: 0;
 }
 
-.covenant_partnership .col .card .card-body {
+.covenant_partnership .col .card .card-body,
+.tasks_ahead .col .card .card-body {
 	padding-inline: 0;
 }
 
-.covenant_partnership .col .card .card-body h3 {
+.covenant_partnership .col .card .card-body h3,
+.tasks_ahead .col .card .card-body h3 {
 	text-transform: uppercase;
 }
 
-.covenant_partnership .col .card .card-body ul li {
+.covenant_partnership .col .card .card-body ul,
+.tasks_ahead .col .card .card-body ul {
+	margin-bottom: 0;
+}
+
+.covenant_partnership .col .card .card-body ul li,
+.tasks_ahead .col .card .card-body ul li {
 	list-style-type: square;
 	padding-block: 0.2rem;
 }
+
+/* * tasks ahead section */
 
 @media (min-width: 48em) {
 	/* * supportus hero section */

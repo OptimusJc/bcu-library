@@ -116,6 +116,60 @@ function SupportUs() {
 					</div>
 				</div>
 			</section>
+
+			<section className="tasks_ahead">
+				<div className="container">
+					<div className="row">
+						<div className="col">
+							<div className="card">
+								<div className="card-body">
+									<h3 className="h3">bcu tasks ahead</h3>
+									<ul>
+										<li>
+											<p>
+												As a living organism the Body of Christ United Global
+												International Ministries is in need of people who will
+												stand in the gap as prayer partners and makes
+												intercessions for the vision
+											</p>
+										</li>
+										<li>
+											<p>
+												As the Body of Christ United Global International
+												Ministries, we are also seeking covenant partners who
+												will stand with this vision of God to love by action
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div className="card">
+								<div className="card-body">
+									<h3 className="h3">where does my gift go?</h3>
+									<ul>
+										<li>
+											<p>
+												We always want the best from God, therefore when you
+												give, you should plant the best. When you give, you are
+												planting seeds that will be multiplied back unto you
+											</p>
+										</li>
+										<li>
+											<p>
+												Partnership is the decision to give God your best. Your
+												monthly gift or more will support BCU International as a
+												whole, including both broadcast and humanitarian aspects
+												of the ministry
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 }
