@@ -202,6 +202,12 @@
 	.covenant_partnership .col .card .card-body h3 {
 		font-size: 1.5rem;
 	}
+
+	/* * .tasks_ahead section */
+	.tasks_ahead .col {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 @media (min-width: 64em) {
@@ -260,5 +266,15 @@
 
 	.covenant_partnership .col .card .card-body h3 {
 		font-size: 1.6rem;
+	}
+
+	/* * .tasks_ahead section */
+	.tasks_ahead .col .card {
+		width: auto;
+	}
+
+	.tasks_ahead .col .card:nth-child(2) {
+		margin-top: 17rem;
+		text-align: right;
 	}
 }
