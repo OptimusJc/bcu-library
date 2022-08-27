@@ -1,6 +1,11 @@
 import "./SupportUs.modules.css";
 
 import image1 from "../../assets/images/carousel/image6.jpeg";
+import image2 from "../../assets/images/carousel/image4.jpg";
+import image3 from "../../assets/images/carousel/image6.jpeg";
+import image4 from "../../assets/images/carousel/image7.jpg";
+import image5 from "../../assets/images/carousel/image8.jpg";
+import image6 from "../../assets/images/carousel/image9.jpg";
 
 function SupportUs() {
 	return (
@@ -164,6 +169,38 @@ function SupportUs() {
 											</p>
 										</li>
 									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="carousel_slide">
+				<div className="container">
+					<div className="row">
+						<div className="col">
+							<div
+								id="carouselExampleSlidesOnly"
+								className="carousel slide"
+								data-bs-ride="carousel"
+							>
+								<div className="carousel-inner">
+									<div className="carousel-item active">
+										<img src={image2} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image3} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image4} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image5} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image6} className="d-block w-100" alt="..." />
+									</div>
 								</div>
 							</div>
 						</div>

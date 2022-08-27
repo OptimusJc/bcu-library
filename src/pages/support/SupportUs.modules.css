@@ -133,7 +133,15 @@
 	padding-block: 0.2rem;
 }
 
-/* * tasks ahead section */
+/* * carousel_slide  section */
+.carousel_slide {
+	margin-block: 1.5rem;
+}
+
+.carousel_slide .carousel {
+	height: 210px;
+	overflow: hidden;
+}
 
 @media (min-width: 48em) {
 	/* * supportus hero section */
@@ -208,6 +216,11 @@
 		display: flex;
 		flex-direction: row;
 	}
+
+	/* * carousel_slide  section */
+	.carousel_slide .carousel {
+		height: 380px;
+	}
 }
 
 @media (min-width: 64em) {
@@ -276,5 +289,10 @@
 	.tasks_ahead .col .card:nth-child(2) {
 		margin-top: 17rem;
 		text-align: right;
+	}
+
+	/* * carousel_slide  section */
+	.carousel_slide .carousel {
+		height: 600px;
 	}
 }
