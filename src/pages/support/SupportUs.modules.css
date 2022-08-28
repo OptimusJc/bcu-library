@@ -94,40 +94,40 @@
 	margin-inline: 0;
 }
 
-.covenant_partnership .col .image {
+.covenant_partnership .col .covenant_wrapper .image {
 	height: 250px;
 	margin-inline: -0.7rem;
 	overflow: hidden;
 }
 
-.covenant_partnership .col .image img {
+.covenant_partnership .col .covenant_wrapper .image img {
 	width: 100%;
 	height: auto;
 }
 
-.covenant_partnership .col .card,
+.covenant_partnership .col .covenant_wrapper .card,
 .tasks_ahead .col .card {
 	box-shadow: none;
 	width: 330px;
 	margin-bottom: 0;
 }
 
-.covenant_partnership .col .card .card-body,
+.covenant_partnership .col .covenant_wrapper .card .card-body,
 .tasks_ahead .col .card .card-body {
 	padding-inline: 0;
 }
 
-.covenant_partnership .col .card .card-body h3,
+.covenant_partnership .col .covenant_wrapper .card .card-body h3,
 .tasks_ahead .col .card .card-body h3 {
 	text-transform: uppercase;
 }
 
-.covenant_partnership .col .card .card-body ul,
+.covenant_partnership .col .covenant_wrapper .card .card-body ul,
 .tasks_ahead .col .card .card-body ul {
 	margin-bottom: 0;
 }
 
-.covenant_partnership .col .card .card-body ul li,
+.covenant_partnership .col .covenant_wrapper .card .card-body ul li,
 .tasks_ahead .col .card .card-body ul li {
 	list-style-type: square;
 	padding-block: 0.2rem;
@@ -141,6 +141,76 @@
 .carousel_slide .carousel {
 	height: 210px;
 	overflow: hidden;
+}
+
+/* * donation_options */
+.donation_options .col .side_nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.donation_options .col .side_nav .nav .nav-link {
+	width: 100%;
+	text-align: left;
+	padding-block: 1rem;
+	color: var(--bs-white);
+	background-color: var(--color-2);
+	margin-block: 0.2rem;
+}
+.donation_options .col .side_nav .nav .nav-link.active {
+	background: none;
+	border: 2px solid var(--color-2);
+	color: var(--color-2);
+}
+
+.donation_options .col .side_nav .tab-content .tab-pane .card {
+	box-shadow: none;
+	width: 330px;
+}
+
+.donation_options .col .side_nav .tab-content .tab-pane .card h3 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding-bottom: 1rem;
+	position: relative;
+}
+.donation_options .col .side_nav .tab-content .tab-pane .card h3::after {
+	content: "";
+	width: 45px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: var(--color-3);
+}
+.donation_options .col .side_nav .tab-content .tab-pane .card h3::after {
+	content: "";
+	width: 45px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: var(--color-3);
+}
+
+.donation_options
+	.col
+	.side_nav
+	.tab-content
+	.tab-pane
+	.card
+	.card-body
+	p
+	span {
+	text-decoration: none;
+	font-style: normal;
+	color: var(--color-2);
+}
+
+.donation_options .col .side_nav .tab-content .tab-pane .card .card-body a {
+	background-color: var(--color-2);
+	color: var(--color-5);
+	margin-block-end: 1rem;
 }
 
 @media (min-width: 48em) {
@@ -173,18 +243,18 @@
 	}
 
 	/* * .covenant_partnership section */
-	.covenant_partnership .col {
+	.covenant_partnership .col .covenant_wrapper {
 		display: flex;
 	}
 
-	.covenant_partnership .col .image {
+	.covenant_partnership .col .covenant_wrapper .image {
 		width: 900px;
 		height: 400px;
 		object-fit: cover;
 		object-position: center;
 	}
 
-	.covenant_partnership .col .image img {
+	.covenant_partnership .col .covenant_wrapper .image img {
 		width: 100%;
 		height: 100%;
 		/* object-fit: fill; */
@@ -194,7 +264,7 @@
 		margin-inline: 1.5rem;
 	}
 
-	.covenant_partnership .col .card {
+	.covenant_partnership .col .covenant_wrapper .card {
 		background-color: var(--color-4);
 		padding-inline: 1rem;
 		margin-left: -20rem;
@@ -202,12 +272,12 @@
 		margin-top: 8rem;
 	}
 
-	.covenant_partnership .col .card .card-body ul li {
+	.covenant_partnership .col .covenant_wrapper .card .card-body ul li {
 		padding-block: 0.1rem;
 		font-size: 0.9rem;
 	}
 
-	.covenant_partnership .col .card .card-body h3 {
+	.covenant_partnership .col .covenant_wrapper .card .card-body h3 {
 		font-size: 1.5rem;
 	}
 
@@ -221,16 +291,40 @@
 	.carousel_slide .carousel {
 		height: 380px;
 	}
+
+	/* * donation_options */
+	.donation_options .col .side_nav {
+		flex-direction: row;
+		align-items: center;
+	}
+	.donation_options .col .side_nav .nav .nav-link {
+		width: 200px;
+		padding-block: 1.5rem;
+	}
+
+	.donation_options .col .side_nav .tab-content .tab-pane .card {
+		width: 450px;
+		height: 280px;
+	}
+
+	.donation_options .col .side_nav .tab-content .tab-pane .card .card-body a {
+		margin-inline-end: 2rem;
+	}
 }
 
 @media (min-width: 64em) {
 	/* * supportus hero section  */
+	.supportus_hero_section,
 	.supportus_hero_section .supportus_hero {
-		width: 460px;
+		height: 500px;
+	}
+
+	.supportus_hero_section .supportus_hero {
+		width: 480px;
 	}
 
 	.supportus_hero_section .supportus_hero .supportus_hero_title {
-		font-size: 1.8rem;
+		font-size: 1.9rem;
 	}
 
 	/* * supportus_give section */
@@ -247,7 +341,7 @@
 
 	/* * .become_partner section */
 	.become_partner {
-		padding-block: 3rem;
+		padding-block: 4rem;
 	}
 
 	.become_partner div p,
@@ -256,28 +350,29 @@
 	}
 
 	/* * .covenant_partnership section  */
-	.covenant_partnership .row {
+	.covenant_partnership .col .covenant_wrapper {
+		width: max-content;
+		margin-inline: auto;
 	}
 
-	.covenant_partnership .col .image {
+	.covenant_partnership .col .covenant_wrapper .image {
 		width: 650px;
 		height: 450px;
-		margin-left: 7rem;
 	}
 
-	.covenant_partnership .col .card {
+	.covenant_partnership .col .covenant_wrapper .card {
 		padding: 1.8rem;
 		margin-left: -15rem;
 		width: 650px;
 		margin-top: 12rem;
 	}
 
-	.covenant_partnership .col .card .card-body ul li {
+	.covenant_partnership .col .covenant_wrapper .card .card-body ul li {
 		padding-block: 0.3rem;
 		font-size: 1rem;
 	}
 
-	.covenant_partnership .col .card .card-body h3 {
+	.covenant_partnership .col .covenant_wrapper .card .card-body h3 {
 		font-size: 1.6rem;
 	}
 
@@ -294,5 +389,68 @@
 	/* * carousel_slide  section */
 	.carousel_slide .carousel {
 		height: 600px;
+	}
+
+	/* * donation_options */
+	.donation_options .col .side_nav .nav-pills {
+		flex-direction: column;
+	}
+	.donation_options .col .side_nav .nav .nav-link {
+		width: 250px;
+		padding-block: 2rem;
+	}
+
+	.donation_options .col .side_nav .tab-content .tab-pane .card {
+		height: auto;
+		margin-inline: 3rem;
+	}
+
+	.donation_options {
+		margin-block: 2rem;
+	}
+
+	.donation_options .col h2 {
+		font-size: 2rem;
+		padding-block: 1rem;
+	}
+}
+
+@media (min-width: 80em) {
+	/* * supportus hero section  */
+	.supportus_hero_section,
+	.supportus_hero_section .supportus_hero {
+		height: 620px;
+	}
+
+	.supportus_hero_section .supportus_hero {
+		width: 550px;
+	}
+
+	.supportus_hero_section .supportus_hero .supportus_hero_title {
+		font-size: 2.2rem;
+	}
+
+	.supportus_hero_section .supportus_hero .supportus_hero_subtitle {
+		font-size: 1.3rem;
+	}
+
+	/* * supportus_give section */
+	.supportus_give {
+		padding-block: 2rem;
+	}
+
+	.become_partner {
+		padding-block: 6rem;
+	}
+
+	/* * .covenant_partnership section  */
+	.covenant_partnership .col .covenant_wrapper .image {
+		width: 750px;
+		height: 480px;
+	}
+
+	.covenant_partnership .col .covenant_wrapper .card {
+		margin-left: -10rem;
+		margin-top: 15rem;
 	}
 }

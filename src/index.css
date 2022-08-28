@@ -362,7 +362,8 @@
     --color-2: #8C0869;
     --color-3: #2F0940;
     --color-4: #EFB34C;
-    --color-5: #FDFEBA;
+    --color-5: hsl(61, 97%, 86%);
+    --color-5-100: hsl(61, 97%, 97%);
     --white: #f2f2f2;
 
     --font-family-sans-serif: "Lora",

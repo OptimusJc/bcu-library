@@ -8,6 +8,9 @@ import image5 from "../../assets/images/carousel/image8.jpg";
 import image6 from "../../assets/images/carousel/image9.jpg";
 
 function SupportUs() {
+	const PAYPAL_URL =
+		"https://www.paypal.com/donate?token=ljOPjwdqpyKyTgWwS9xHcdMGI96aZIHum32tqUnA5tjaX7fGcVgrTT8Q7Oh7C8-PRt9CUj4G7irXMo_i";
+
 	return (
 		<div>
 			<section className="supportus_hero_section">
@@ -82,39 +85,41 @@ function SupportUs() {
 				<div className="contianer">
 					<div className="row">
 						<div className="col">
-							<div className="image">
-								<img src={image1} alt="" />
-							</div>
+							<div className="covenant_wrapper">
+								<div className="image">
+									<img src={image1} alt="" />
+								</div>
 
-							<div className="card">
-								<div className="card-body">
-									<h3 className="h3">
-										as a bcu covenant partner, you will recieve:
-									</h3>
-									<ul>
-										<li>
-											You will be prioritized as a partner to recieve first-hand
-											information on what God is doing through BCU
-										</li>
-										<li>
-											You will recieve weekly links to our powerful, dynamic and
-											life-changing bible study sessions that will transform
-											your life
-										</li>
-										<li>
-											You will be given an opportunity to expand throuh
-											advertising with us and take both your ministry and
-											business global with our international reach
-										</li>
-										<li>
-											As a covenant partner you will qualify to recieve
-											discounts on advertisments
-										</li>
-										<li>
-											You will also qualify as a covenant partner to recieve
-											discounts on all the BCU products and materials
-										</li>
-									</ul>
+								<div className="card">
+									<div className="card-body">
+										<h3 className="h3">
+											as a bcu covenant partner, you will recieve:
+										</h3>
+										<ul>
+											<li>
+												You will be prioritized as a partner to recieve
+												first-hand information on what God is doing through BCU
+											</li>
+											<li>
+												You will recieve weekly links to our powerful, dynamic
+												and life-changing bible study sessions that will
+												transform your life
+											</li>
+											<li>
+												You will be given an opportunity to expand throuh
+												advertising with us and take both your ministry and
+												business global with our international reach
+											</li>
+											<li>
+												As a covenant partner you will qualify to recieve
+												discounts on advertisments
+											</li>
+											<li>
+												You will also qualify as a covenant partner to recieve
+												discounts on all the BCU products and materials
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -200,6 +205,150 @@ function SupportUs() {
 									</div>
 									<div className="carousel-item">
 										<img src={image6} className="d-block w-100" alt="..." />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="donation_options">
+				<div className="container">
+					<div className="row">
+						<div className="col">
+							<h2>Ways To Give</h2>
+							<div className="side_nav">
+								<div className="nav nav-pills" id="v-pills-tab">
+									<button
+										className="nav-link active"
+										id="v-pills-home-tab"
+										data-bs-toggle="pill"
+										data-bs-target="#v-pills-paypal"
+										role="tab"
+										type="button"
+									>
+										Paypal
+									</button>
+									<button
+										className="nav-link"
+										id="v-pills-home-tab"
+										data-bs-toggle="pill"
+										data-bs-target="#v-pills-mpesa"
+										role="tab"
+										type="button"
+									>
+										Mpesa
+									</button>
+									<button
+										className="nav-link"
+										id="v-pills-home-tab"
+										data-bs-toggle="pill"
+										data-bs-target="#v-pills-bank_transfer"
+										role="tab"
+										type="button"
+									>
+										Bank Transfer
+									</button>
+									<button
+										className="nav-link"
+										id="v-pills-home-tab"
+										data-bs-toggle="pill"
+										data-bs-target="#v-pills-mail"
+										role="tab"
+										type="button"
+									>
+										Mail
+									</button>
+								</div>
+
+								<div className="tab-content" id="v-pills-tabContent">
+									<div
+										className="tab-pane fade show active"
+										id="v-pills-paypal"
+										role="tabpanel"
+									>
+										<div className="card">
+											<div className="card-body">
+												<h3>Paypal</h3>
+												<p>
+													<span>R.R.C.B.N</span>
+												</p>
+												<p>
+													<span>
+														The Body of Christ United Global International
+														Ministries
+													</span>
+												</p>
+												<p>
+													You can make a one-time or reccurring gift through
+													Paypal
+												</p>
+												<a href={PAYPAL_URL} className="btn btn-primary">
+													Give via Paypal
+												</a>
+												<a href="/contact" className="btn btn-primary">
+													Contact Us
+												</a>
+											</div>
+										</div>
+									</div>
+									<div
+										className="tab-pane fade"
+										id="v-pills-mpesa"
+										role="tabpanel"
+									>
+										<div className="card">
+											<div className="card-body">
+												<h3>Mpesa</h3>
+
+												<p>Give via mpesa using this number +254 741 849 308</p>
+
+												<a href="/contact" className="btn btn-primary">
+													Contact Us
+												</a>
+											</div>
+										</div>
+									</div>
+									<div
+										className="tab-pane fade"
+										id="v-pills-bank_transfer"
+										role="tabpanel"
+									>
+										<div className="card">
+											<div className="card-body">
+												<h3>Autopay through your bank</h3>
+												<p>
+													If you wish to make your gift or Partnership Payments
+													by Direct Deposit or Wire Transfer, you can contact us
+													for banking details
+												</p>
+
+												<a href="/contact" className="btn btn-primary">
+													Contact Us
+												</a>
+											</div>
+										</div>
+									</div>
+									<div
+										className="tab-pane fade"
+										id="v-pills-mail"
+										role="tabpanel"
+									>
+										<div className="card">
+											<div className="card-body">
+												<h3>By Mail</h3>
+												<p>
+													Place your offering in the mail to be delivered to our
+													secured mail
+												</p>
+												<p>P.O Box 625 Banning California 92220</p>
+
+												<a href="/contact" className="btn btn-primary">
+													Contact Us
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
