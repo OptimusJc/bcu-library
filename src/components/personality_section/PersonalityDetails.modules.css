@@ -1,58 +1,56 @@
-
 .personality h3 {
-    color: var(--color-2);
+	color: var(--color-2);
 }
 
 .personality h5,
 .personality h6 {
-    color: var(--color-1);  
+	color: var(--color-1);
 }
-
 
 .personality-body .personality-image,
 .personality-body .personality-text {
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	line-height: 1.6rem;
 }
 
 .personality-body .personality-image {
-    width: auto;
-    height: 350px;
-    margin-top: 1rem;
+	width: auto;
+	height: 350px;
+	margin-top: 1rem;
 }
 .personality-body .personality-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
 }
 
 p span {
-    color: var(--bs-blue);
-    text-decoration: underline;
-    font-style: italic;
+	color: var(--bs-blue);
+	text-decoration: underline;
+	font-style: italic;
 }
 
 @media (min-width: 48em) {
-    .personality-body .personality-image {
-        height: 300px;
-        width: 350px;
-        float: left;
-        margin-bottom: 0.9rem;
-    }
-
+	.personality-body .personality-image {
+		height: 300px;
+		width: 350px;
+		float: left;
+		margin-bottom: 0.9rem;
+	}
 }
 
 @media (min-width: 64em) {
-    .personality-body .personality-image {
-        width: 500px;
-        height: 400px;
-        margin-bottom: 1rem;
-    }
+	.personality-body .personality-image {
+		width: 500px;
+		height: 400px;
+		margin-bottom: 1rem;
+	}
 }
 
 @media (min-width: 80em) {
-    .personality-body .personality-image {
-        width: 600px;
-        height: 450px;
-    }
+	.personality-body .personality-image {
+		width: 600px;
+		height: 450px;
+	}
 }
