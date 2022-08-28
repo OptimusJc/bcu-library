@@ -34,7 +34,7 @@ const Footer = () => {
 							<Link to="">About the Library</Link>
 						</li>
 						<li>
-							<Link to="">Contact Us</Link>
+							<Link to="/contact">Contact Us</Link>
 						</li>
 					</ul>
 				</div>
@@ -70,7 +70,7 @@ const Footer = () => {
 							<Link to="">Volunteer</Link>
 						</li>
 						<li>
-							<Link to="">Donate</Link>
+							<Link to="/support">Donate</Link>
 						</li>
 					</ul>
 				</div>
