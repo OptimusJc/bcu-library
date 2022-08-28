@@ -453,4 +453,8 @@
 		margin-left: -10rem;
 		margin-top: 15rem;
 	}
+
+	.donation_options {
+		margin-block: 4rem;
+	}
 }
