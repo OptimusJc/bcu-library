@@ -1,70 +1,71 @@
 .hero {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: var(--purple-shade-3);
-    background-image: url("../../assets/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: var(--purple-shade-3);
+	background-image: url("../../assets/images/background_compressed.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .hero .display {
-    font-size: calc(20rem / 16);
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 31px;
-    letter-spacing: calc((24 / 1000) * 1rem);
-    margin-block-end: 2rem;
-    color: var(--white);
-    width: max-content;
+	font-size: calc(20rem / 16);
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 31px;
+	letter-spacing: calc((24 / 1000) * 1rem);
+	margin-block-end: 2rem;
+	color: var(--white);
+	width: max-content;
 }
 
 .hero .btn-search {
-    background-image: linear-gradient(to right,
-        var(--color-3),
-        var(--color-1),
-        var(--color-2));
-    color: var(--color-4);
-    letter-spacing: .3px;
-    order: 2;
-    margin-block: 1rem;
+	background-image: linear-gradient(
+		to right,
+		var(--color-3),
+		var(--color-1),
+		var(--color-2)
+	);
+	color: var(--color-4);
+	letter-spacing: 0.3px;
+	order: 2;
+	margin-block: 1rem;
 }
 .hero .btn-search:hover {
-    box-shadow: 4px 4px 16px var(--color-2);
+	box-shadow: 4px 4px 16px var(--color-2);
 }
 
 .hero input {
-    width: 300px;
-    padding: 0.9rem;
-    border-radius: 3px;
-    border: inherit;
+	width: 300px;
+	padding: 0.9rem;
+	border-radius: 3px;
+	border: inherit;
 }
 
 @media (min-width: 64em) {
-    .hero {
-        padding-block: 150px;
-    }
+	.hero {
+		padding-block: 150px;
+	}
 
-    .hero div {
-        justify-content: flex-start;
-        align-items: baseline;
-    }
+	.hero div {
+		justify-content: flex-start;
+		align-items: baseline;
+	}
 
-    .hero .btn-search {
-        width: 140px;
-    }
+	.hero .btn-search {
+		width: 140px;
+	}
 }
 
-@media (min-width: 80rem){
-    .hero {
-        padding-block: 250px;
-    }
+@media (min-width: 80rem) {
+	.hero {
+		padding-block: 250px;
+	}
 }
