@@ -1,5 +1,5 @@
 import "./PersonalityDetails.modules.css";
-import bishopImage from "../../assets/images/personalities/bishop_and_firstlady.png";
+import bishopImage from "../../assets/images/personalities/bishop_and_firstlady_compressed.png";
 
 const PersonalityDetails = (url) => {
 	return (

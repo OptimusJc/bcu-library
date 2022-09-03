@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Personality.modules.css";
-import bishopImage from "../../assets/images/personalities/paster-td-jakes.jpg";
+import bishopImage from "../../assets/images/personalities/paster-td-jakes_compressed.jpg";
 
 const Personality = () => {
 	return (
