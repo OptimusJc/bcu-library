@@ -26,7 +26,7 @@ const Personality = () => {
 
 					{/* <Button title="Read More" classes="read-more" /> */}
 					<Link className="read_more" to="/read-more">
-						Read More
+						More Information
 					</Link>
 				</div>
 			</div>
