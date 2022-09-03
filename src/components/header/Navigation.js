@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Navigation.module.css";
-import logo from "../../assets/images/bcu_logo.png";
+import logo from "../../assets/images/bcu_logo_compressed.png";
 
 import ebook from "../../assets/images/stream&download/ebook_icon_light.svg";
 import music from "../../assets/images/stream&download/music_icon_light.svg";
@@ -49,9 +49,9 @@ function Navigation() {
 							aria-labelledby="offcanvasNavbarLabel"
 						>
 							<div className="offcanvas-header">
-								<div className={classes.navbar_brand}>
+								{/* <div className={classes.navbar_brand}>
 									<img src={logo} alt="bcu logo" />
-								</div>
+								</div> */}
 								<button
 									type="button"
 									className={["text-reset", classes.navbar_toggler_close].join(
@@ -108,7 +108,7 @@ function Navigation() {
 											className="nav-link 
                                     dropdown-toggle"
 											to="#"
-											id="offcanvasNavbarDropdown"
+											id="offcanvasNavbarDropdown1"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -120,7 +120,7 @@ function Navigation() {
 												"dropdown-menu",
 												classes.dropdown_menu_container,
 											].join(" ")}
-											aria-labelledby="offcanvasNavbarDropdown"
+											aria-labelledby="offcanvasNavbarDropdown1"
 										>
 											<li>
 												<NavLink
@@ -177,7 +177,7 @@ function Navigation() {
 										<NavLink
 											to="#"
 											className="nav-link dropdown-toggle"
-											id="offcanvasNavbarDropdown"
+											id="offcanvasNavbarDropdown2"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -189,7 +189,7 @@ function Navigation() {
 												"dropdown-menu",
 												classes.dropdown_menu_container,
 											].join(" ")}
-											aria-labelledby="offcanvasNavbarDropdown"
+											aria-labelledby="offcanvasNavbarDropdown2"
 										>
 											<li>
 												<NavLink

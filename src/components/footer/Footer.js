@@ -15,14 +15,14 @@ const Footer = () => {
 
 					<ul className="footer-icons">
 						<li>
-							<Link to="" className="facebook">
+							<a href="#" className="facebook">
 								<CgFacebook />
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link to="" className="youtube">
+							<a href="#" className="youtube">
 								<FaYoutube />
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>

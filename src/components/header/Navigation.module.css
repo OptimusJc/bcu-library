@@ -58,6 +58,10 @@ header .offcanvas_body li a {
 	width: min(100% - 80px);
 }
 
+.offcanvasNavbar div:nth-child(1) {
+	justify-content: flex-end;
+}
+
 .offcanvas_body li a:focus {
 	color: var(--color-4);
 }
