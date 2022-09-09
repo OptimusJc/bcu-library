@@ -40,7 +40,13 @@ const Adverts = () => {
 				</div>
 				<div className="carousel-inner">
 					<div className="carousel-item active">
-						<img src={image1} className="d-block w-100" alt="..." />
+						<img
+							src={image1}
+							width="600px"
+							height="400px"
+							className="d-block w-100"
+							alt="..."
+						/>
 						<div
 							className={[
 								"carousel-caption",
@@ -56,7 +62,13 @@ const Adverts = () => {
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src={image2} className="d-block w-100" alt="..." />
+						<img
+							src={image2}
+							width="600px"
+							height="400px"
+							className="d-block w-100"
+							alt="..."
+						/>
 						<div
 							className={[
 								"carousel-caption",
@@ -72,7 +84,13 @@ const Adverts = () => {
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src={image3} className="d-block w-100" alt="..." />
+						<img
+							src={image3}
+							width="600px"
+							height="400px"
+							className="d-block w-100"
+							alt="..."
+						/>
 						<div
 							className={[
 								"carousel-caption",
