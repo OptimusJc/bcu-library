@@ -7,32 +7,32 @@ import "./Feature.modules.css";
 const Feature = ({ title, author, date, path, doc_id }) => {
 	return (
 		<div className="feature">
-			<ul>
-				<li>
-					<Link
-						to={`/download/${doc_id}`}
-						state={{
-							document_title: { title },
-							document_author: { author },
-							document_url: { path },
-						}}
-					>
-						<img
-							src="https://via.placeholder.com/110x80"
-							alt=""
-							className="featureImage"
-						/>
-						<div>
-							<h6 className="h6">{author}</h6>
-							<p>{title}</p>
-							<span>
-								<BiTime className={["clock"]} />
-								{date}
-							</span>
-						</div>
-					</Link>
-				</li>
-			</ul>
+			{/* <ul>
+				<li> */}
+			<Link
+				to={`/download/${doc_id}`}
+				state={{
+					document_title: { title },
+					document_author: { author },
+					document_url: { path },
+				}}
+			>
+				<img
+					src="https://via.placeholder.com/110x80"
+					alt=""
+					className="featureImage"
+				/>
+				<div>
+					<p className="title">{author}</p>
+					<p>{title}</p>
+					<span>
+						<BiTime className={["clock"]} />
+						{date}
+					</span>
+				</div>
+			</Link>
+			{/* </li>
+			</ul> */}
 		</div>
 	);
 };
