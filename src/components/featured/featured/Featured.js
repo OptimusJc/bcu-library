@@ -20,7 +20,7 @@ const Featured = () => {
 		const docId = featured_data[index] && featured_data[index].id;
 
 		return (
-			<div style={style}>
+			<div style={style} className="fixedSizeList__row">
 				<Feature
 					doc_id={docId}
 					path={url}

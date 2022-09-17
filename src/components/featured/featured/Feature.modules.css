@@ -97,16 +97,16 @@
 		width: 110px;
 	}
 
-	.feature ul a div {
+	.feature a div {
 		width: 180px;
 	}
-	.feature ul a div p.title {
+	.feature a div p.title {
 		width: -moz-fit-content;
 		width: fit-content;
-		font-size: 0.925rem;
+		font-size: 0.9rem;
 	}
 
-	.feature ul a div p {
+	.feature a div p {
 		font-size: 0.8rem;
 		margin: 0;
 	}
@@ -122,6 +122,7 @@
 		height: 240px;
 		width: 320px;
 		margin-top: 0.7rem;
+		overflow: hidden;
 	}
 }
 
@@ -131,13 +132,28 @@
 		width: 360px;
 	}
 
-	.feature ul a div {
-		width: 250px;
+	.feature a {
+		justify-content: center;
 	}
-	.feature ul a div p {
-		font-size: 0.9rem;
+
+	.feature a div {
+		width: 270px;
+	}
+
+	.feature a div p {
+		font-size: 1rem;
 		line-height: 1.3rem;
 		margin-bottom: 0.5rem;
+		width: auto;
+	}
+
+	.feature a div p.title {
+		font-size: 1.2rem;
+		width: auto;
+	}
+
+	.featured-container div.list--container {
+		width: 100% !important;
 	}
 }
 
