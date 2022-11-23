@@ -7,17 +7,17 @@ import OtherTitles from "../../components/others-section/OtherTitles.js";
 import FeaturedSpecificSection from "../../components/featured-specific-section/FeaturedSpecificSection.js";
 
 const Home = () => {
-    return (
-        <div>
-            <Hero />
-            <FeaturedSection />
-            <Stream />
-            <Personality />
-            <ApostleSection />
-            <OtherTitles />
-            <FeaturedSpecificSection />
-        </div>
-    );
+	return (
+		<div>
+			<Hero />
+			<FeaturedSection />
+			<Stream />
+			<Personality />
+			<ApostleSection />
+			<OtherTitles />
+			<FeaturedSpecificSection />
+		</div>
+	);
 };
 
 export default Home;

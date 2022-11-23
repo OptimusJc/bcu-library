@@ -8,10 +8,11 @@
 }
 
 header {
-	height: 80px;
+	height: 85px;
 }
 header .navbar_brand img {
 	width: 120px;
+	height: 70px;
 	margin-left: -1rem;
 }
 

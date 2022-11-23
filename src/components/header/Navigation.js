@@ -20,7 +20,7 @@ function Navigation() {
 				<nav className="navbar navbar-expand-lg">
 					<div className={["container", classes.nav_container].join(" ")}>
 						<NavLink to="/" className={classes.navbar_brand}>
-							<img src={logo} alt="bcu logo" />
+							<img height="80px" width="100px" src={logo} alt="bcu logo" />
 						</NavLink>
 
 						<button

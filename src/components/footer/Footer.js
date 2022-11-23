@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footer_logo from "../../assets/images/bcu_logo.png";
+import footer_logo from "../../assets/images/bcu_logo_compressed.png";
 import "./footer.modules.css";
 import styles from "../header/Navigation.module.css";
 
@@ -11,7 +11,12 @@ const Footer = () => {
 		<footer className={["container-fluid", styles.backgroundColor].join(" ")}>
 			<div className={["footer"]}>
 				<div className="footer-logo">
-					<img src={footer_logo} alt="footer logo" />
+					<img
+						height="80px"
+						width="100px"
+						src={footer_logo}
+						alt="footer logo"
+					/>
 
 					<ul className="footer-icons">
 						<li>

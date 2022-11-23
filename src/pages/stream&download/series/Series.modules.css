@@ -1,0 +1,47 @@
+.series .row {
+	outline: 2px solid var(--color-2);
+	margin-block: 1rem;
+}
+
+.series .christian-series .col {
+	min-height: 200px;
+}
+
+/* .series:has(div.carousel) .carousel-inner {
+	display: grid;
+	background-color: cyan;
+	overflow: auto;
+} */
+
+.series:has(div.carousel) button {
+	outline: 2px solid red;
+}
+
+.series:has(div.carousel) button.carousel-control-prev svg,
+.series:has(div.carousel) button.carousel-control-next svg {
+	bottom: initial;
+	top: -2.2rem;
+	color: var(--color-3);
+	opacity: 1;
+	width: 25px;
+	height: 25px;
+}
+
+.series:has(div.carousel) button.carousel-control-prev {
+	left: initial;
+	right: 2.5rem;
+}
+
+.series:has(div.carousel-inner) .card {
+	height: 200px;
+	display: flex;
+}
+
+.series:has(div.carousel-inner) img {
+	position: relative;
+	height: 100%;
+}
+
+.series:has(div.carousel-inner) .card-body {
+	position: absolute;
+}
