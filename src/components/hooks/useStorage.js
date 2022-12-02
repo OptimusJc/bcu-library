@@ -43,13 +43,14 @@ const useStorage = (files, storagePath, firestorePath) => {
 						// For instance, get the download URL: https://firebasestorage.googleapis.com/...
 						const url = await getDownloadURL(uploadTask.snapshot.ref);
 
-						const title = uploadTask.snapshot.ref.name;
+						let title = uploadTask.snapshot.ref.name;
 						const createdAt = serverTimestamp();
 						setUrl(url);
+						let newTitle = title.slice(0, -4);
 
 						const docData = {
 							url: url,
-							title: title,
+							title: newTitle,
 							createdAt: createdAt,
 						};
 
