@@ -12,13 +12,10 @@ const useStorage = (files, storagePath, firestorePath) => {
 		try {
 			for (let i = 0; i < files.length; i++) {
 				// references
-				const storageRef = ref(
-					fireStorage,
-					`ebooks/spiritual_ebooks/${files[i].name}`
-				);
+				const storageRef = ref(fireStorage, `podcasts/others/${files[i].name}`);
 				const collectionRef = collection(
 					fireStore,
-					`ebooks/spiritual_ebook/spiritual_ebooks`
+					`podcasts/others/other_podcasts/`
 				);
 
 				const uploadTask = uploadBytesResumable(storageRef, files[i]);
