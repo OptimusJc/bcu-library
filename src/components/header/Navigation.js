@@ -79,7 +79,7 @@ function Navigation() {
 											Home
 										</NavLink>
 									</li>
-									<li className="nav-item">
+									{/* <li className="nav-item">
 										<NavLink
 											to="/news-and-magazines"
 											className="nav-link"
@@ -100,7 +100,7 @@ function Navigation() {
 										>
 											Kids & Teens
 										</NavLink>
-									</li>
+									</li> */}
 
 									{/* stream and download link  */}
 									<li className="nav-item dropdown">
@@ -173,7 +173,7 @@ function Navigation() {
 										</ul>
 									</li>
 
-									<li className="nav-item dropdown">
+									{/* <li className="nav-item dropdown">
 										<NavLink
 											to="#"
 											className="nav-link dropdown-toggle"
@@ -214,7 +214,7 @@ function Navigation() {
 												</NavLink>
 											</li>
 										</ul>
-									</li>
+									</li> */}
 								</ul>
 
 								<ul className="navbar-nav">
