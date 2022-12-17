@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Progress from "../progress/Progress";
 import UploadInput from "./UploadInput/UploadInput.jsx";
+import useFirestore from "../hooks/useFirestore";
 
 const UploadForm = () => {
 	const [files, setFiles] = useState(null);
@@ -49,10 +50,13 @@ const UploadForm = () => {
 					: setError("Please select an audio or video file");
 			});
 		} else {
-			setError("Please select a file");
+			setError("Can not upload nothing😃❗");
 		}
 	};
 	// * [end]
+
+	const podcasts = useFirestore("podcasts/others/other_podcasts");
+	console.log(podcasts.length);
 
 	return (
 		<div className="container">
@@ -108,6 +112,7 @@ const UploadForm = () => {
 							className="btn btn-primary mt-4"
 						/>
 					</form>
+					<p>Number of files uploaded: {podcasts.length}</p>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 import useStorage from "../hooks/useStorage";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./progress.module.css";
 
 const Progress = ({ files, setFiles }) => {
