@@ -55,7 +55,7 @@ const UploadForm = () => {
 	};
 	// * [end]
 
-	const podcasts = useFirestore("podcasts/others/other_podcasts");
+	const podcasts = useFirestore("ebooks/children_ebook/fiction");
 	console.log(podcasts.length);
 
 	return (
