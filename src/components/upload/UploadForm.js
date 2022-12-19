@@ -40,14 +40,14 @@ const UploadForm = () => {
 		const selected = [...e.target.files];
 
 		// * file types
-		const types = ["audio/mpeg", "audio/mp3", "video/mp4", "video/mpeg"];
-		// const types = ["application/pdf", "application/epub+zip"];
+		// const types = ["audio/mpeg", "audio/mp3", "video/mp4", "video/mpeg"];
+		const types = ["application/pdf", "application/epub+zip"];
 
 		if (selected) {
 			selected.map((selectedFile) => {
 				return types.includes(selectedFile.type)
 					? (setFiles(selected), setError(""))
-					: setError("Please select an audio or video file");
+					: setError("Please select pdf/epub files");
 			});
 		} else {
 			setError("Can not upload nothing😃❗");
