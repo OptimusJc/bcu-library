@@ -6,7 +6,7 @@ import cookingUrl from "../../../assets/images/cooking.jpg";
 
 const CookBooks = () => {
 	const cooking_ebook_data = useFirestore(
-		"ebooks/cooking_ebook/cooking_ebooks"
+		"ebooks/cooking_ebooks/cooking_ebooks"
 	);
 
 	return (
