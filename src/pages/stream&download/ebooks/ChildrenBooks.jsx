@@ -5,7 +5,7 @@ import Cards from "../../../components/card/Cards.js";
 
 const ChildrenBooks = () => {
     // fiction books come back and fix this
-    const children_ebook_data = useFirestore("ebooks/children_ebook/fiction");
+    const children_ebook_data = useFirestore("ebooks/children_ebooks/fiction");
 
     return (
         <>
