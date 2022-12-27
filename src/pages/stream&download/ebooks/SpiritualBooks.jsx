@@ -7,7 +7,7 @@ import imgSrc from "../../../assets/images/spiritual.jpg";
 
 const SpiritualBooks = () => {
 	const spiritual_ebook_data = useFirestore(
-		"ebooks/spiritual_ebook/spiritual_ebooks"
+		"ebooks/spiritual_ebooks/spiritual_ebooks"
 	);
 
 	return (
