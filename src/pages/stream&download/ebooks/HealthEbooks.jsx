@@ -6,7 +6,7 @@ import Cards from "../../../components/card/Cards.js";
 import healthUrl from "../../../assets/images/health.jpg";
 
 const HealthEbooks = () => {
-	const health_ebook_data = useFirestore("ebooks/health_ebook/health_ebooks");
+	const health_ebook_data = useFirestore("ebooks/health_ebooks/health_ebooks");
 
 	return (
 		<>
