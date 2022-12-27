@@ -5,7 +5,7 @@ import Cards from "../../../components/card/Cards.js";
 
 const EducationalBooks = () => {
     const educational_ebook_data = useFirestore(
-        "ebooks/educational_ebook/educational_ebooks"
+        "ebooks/educational_ebooks/educational_ebooks"
     );
 
     return (
