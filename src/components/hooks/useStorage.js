@@ -18,7 +18,7 @@ const useStorage = (files, storagePath, firestorePath) => {
 				);
 				const collectionRef = collection(
 					fireStore,
-					`ebooks/children_ebook/fiction`
+					`ebooks/children_ebooks/fiction`
 				);
 
 				const uploadTask = uploadBytesResumable(storageRef, files[i]);
