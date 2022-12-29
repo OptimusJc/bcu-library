@@ -9,7 +9,7 @@ import image6 from "../../assets/images/carousel/image9.jpg";
 
 function SupportUs() {
 	const PAYPAL_URL =
-		"https://www.paypal.com/donate?token=ljOPjwdqpyKyTgWwS9xHcdMGI96aZIHum32tqUnA5tjaX7fGcVgrTT8Q7Oh7C8-PRt9CUj4G7irXMo_i";
+		"https://www.paypal.com/donate?token=yMcDPjajjAN23JeCs-AkGmdA5eAlK0Gz9uanACz6OEZK3mHXq_yrnm26VN1ksVdV3fUj4exx0WutKpuQ";
 
 	return (
 		<div>
@@ -60,7 +60,9 @@ function SupportUs() {
 									<h4 className="h4">PAYPAL</h4>
 									<p className="paragraph1">Donate with paypal</p>
 									<p>R.R.G.N</p>
-									<button className="btn btn-primary">donate</button>
+									<a href={PAYPAL_URL} className="btn btn-primary">
+										donate
+									</a>
 								</div>
 							</div>
 						</div>

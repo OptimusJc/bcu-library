@@ -57,7 +57,7 @@
 	margin-bottom: 0.5rem;
 }
 
-.supportus_give .col .card .card-body button {
+.supportus_give .col .card .card-body a {
 	background-color: var(--color-2);
 	color: var(--color-5);
 }
