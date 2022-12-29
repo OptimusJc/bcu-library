@@ -25,9 +25,12 @@ const Stream = () => {
 					<li>
 						<StreamLink to="/podcasts" imgSrc={podcast} title="Podcasts" />
 					</li>
-					<motion.li whileHover={{ scale: 2, transition: {} }}>
+					<li>
 						<StreamLink to="/series" imgSrc={series} title="Series" />
-					</motion.li>
+					</li>
+					{/* <motion.li whileHover={{ scale: 2, transition: {} }}>
+						<StreamLink to="/series" imgSrc={series} title="Series" />
+					</motion.li> */}
 				</ul>
 			</div>
 		</section>
