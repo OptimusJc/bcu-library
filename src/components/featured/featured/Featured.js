@@ -8,7 +8,7 @@ import "./Feature.modules.css";
 
 const Featured = () => {
 	// * Get docs array from useFirestore
-	const featured_data = useFirestore("podcasts/others/other_podcasts");
+	const featured_data = useFirestore("podcasts/others/others");
 
 	const Row = useCallback(({ index, style }) => {
 		const { url, title, createdAt } = featured_data[index] || {};
