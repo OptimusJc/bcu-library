@@ -4,7 +4,7 @@ const Series = () => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col">
+				<div className="col" style={{ height: "60vh" }}>
 					<h1>Series Page</h1>
 				</div>
 			</div>
