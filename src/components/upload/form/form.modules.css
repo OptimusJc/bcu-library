@@ -1,0 +1,77 @@
+form {
+	min-width: 600px;
+	height: 500px;
+	padding: 1rem;
+	position: relative;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+	margin-block: 1rem;
+}
+
+.file-input {
+	margin-bottom: 4rem;
+}
+
+.file-input .fileInput {
+	opacity: 0;
+	width: 0.01px;
+	height: 0.01px;
+	position: absolute;
+}
+
+.label {
+	position: relative;
+	width: 200px;
+	padding-block: 1rem;
+	border-radius: 25px;
+	background: linear-gradient(40deg, var(--color-2), var(--color-4));
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s ease-out;
+}
+
+.label ul {
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	top: 4rem;
+	right: 1rem;
+	padding: 0.4rem;
+	overflow: scroll;
+}
+ul li.file-name {
+	font-size: 1rem;
+	color: #555;
+	text-transform: capitalize;
+}
+
+.collection_select,
+.category_select {
+	padding-block: 1rem;
+}
+.collection_select label,
+.category_select label {
+	padding-inline-end: 1rem;
+}
+
+.collection_select select,
+.category_select select {
+	padding: 0.4rem 0.6rem;
+}
+
+input[type="submit"] {
+	text-transform: capitalize;
+	padding: 0.7rem 2rem;
+	background: linear-gradient(40deg, var(--color-2), var(--color-4));
+	border: none;
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
