@@ -1,5 +1,3 @@
-import "./Series.modules.css";
-
 const Series = () => {
 	return (
 		<div className="container">
