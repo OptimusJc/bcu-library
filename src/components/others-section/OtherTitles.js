@@ -10,7 +10,7 @@ import ErrorBoundary from "../error/ErrorBoundary";
 
 const OtherTitles = () => {
     // get data
-    const other_podcasts_data = useFirestore("podcasts/others/other_podcasts");
+    const other_podcasts_data = useFirestore("podcasts/others/others");
 
     return (
         <section className="other-section container">
