@@ -59,7 +59,7 @@ function SupportUs() {
 								<div className="card-body">
 									<h4 className="h4">PAYPAL</h4>
 									<p className="paragraph1">Donate with paypal</p>
-									<p>R.R.C.B.N</p>
+									<p>R.R.G.N</p>
 									<button className="btn btn-primary">donate</button>
 								</div>
 							</div>
@@ -127,6 +127,38 @@ function SupportUs() {
 				</div>
 			</section>
 
+			<section className="carousel_slide">
+				<div className="container">
+					<div className="row">
+						<div className="col">
+							<div
+								id="carouselExampleSlidesOnly"
+								className="carousel slide"
+								data-bs-ride="carousel"
+							>
+								<div className="carousel-inner">
+									<div className="carousel-item active">
+										<img src={image2} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image3} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image4} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image5} className="d-block w-100" alt="..." />
+									</div>
+									<div className="carousel-item">
+										<img src={image6} className="d-block w-100" alt="..." />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section className="tasks_ahead">
 				<div className="container">
 					<div className="row">
@@ -174,38 +206,6 @@ function SupportUs() {
 											</p>
 										</li>
 									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section className="carousel_slide">
-				<div className="container">
-					<div className="row">
-						<div className="col">
-							<div
-								id="carouselExampleSlidesOnly"
-								className="carousel slide"
-								data-bs-ride="carousel"
-							>
-								<div className="carousel-inner">
-									<div className="carousel-item active">
-										<img src={image2} className="d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={image3} className="d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={image4} className="d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={image5} className="d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={image6} className="d-block w-100" alt="..." />
-									</div>
 								</div>
 							</div>
 						</div>
@@ -272,7 +272,7 @@ function SupportUs() {
 											<div className="card-body">
 												<h3>Paypal</h3>
 												<p>
-													<span>R.R.C.B.N</span>
+													<span>R.R.G.N</span>
 												</p>
 												<p>
 													<span>
